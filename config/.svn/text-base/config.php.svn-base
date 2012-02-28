@@ -1,0 +1,43 @@
+<?php
+	session_start();
+	error_reporting(E_ERROR);
+	putenv("TZ=US/Eastern");
+
+	define("ROOT_DIR", "/warners/");
+	define("CSS_DIR", ROOT_DIR . "css");
+	define("MEDIA_DIR", ROOT_DIR . "media");
+	define("IMAGES_DIR", ROOT_DIR . "images");
+	define("JS_DIR", ROOT_DIR . "js");
+	define("PARTIALS_DIR", ROOT_DIR . "partials");
+	define("TEMPLATES_DIR", ROOT_DIR . "templates");
+	define("CLASSES_DIR", ROOT_DIR . "classes");
+	define("LIB_DIR", ROOT_DIR . "lib");
+
+	define("NO_THUMBNAIL", MEDIA_DIR . "/no_thumbnail.jpg");
+	define("NO_THUMBNAIL_SMALL", MEDIA_DIR . "/no_thumbnail_small.jpg");
+	define("NO_EVENT_THUMBNAIL", MEDIA_DIR . "/no_event_thumbnail.jpg");
+	define("NO_EVENT_PHOTO", MEDIA_DIR . "/no_event_photo.jpg");
+	define("NO_EVENT_SMALL", MEDIA_DIR . "/no_event_photo_small.jpg");
+	define("NO_PROFILE_PHOTO", MEDIA_DIR . "/no_profile.jpg");
+	define("NO_PROFILE_THUMBNAIL", MEDIA_DIR . "/no_profile_thumbnail.jpg");
+	define("NO_PROFILE_SMALL", MEDIA_DIR . "/no_profile_small.jpg");
+
+	define("MAILING_LIST_FROM", "admin@tobagowarners.com");
+
+	define("SITE_DOMAIN", "http://www.tobagowarners.com");
+
+	define("MAX_IMAGE_WIDTH", 550);
+	define("MAX_IMAGE_HEIGHT", 550);
+
+	define("THUMBNAIL_HEIGHT", 100);
+	define("THUMBNAIL_WIDTH", 100);
+
+	define("SMALL_THUMBNAIL_HEIGHT", 50);
+	define("SMALL_THUMBNAIL_WIDTH", 50);
+
+	require_once "globalfunctions.php";
+
+	require_once "view.php";
+
+	require_once "security.php";
+?>

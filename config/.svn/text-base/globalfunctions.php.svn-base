@@ -1,0 +1,48 @@
+<?php
+
+	require_once $_SERVER['DOCUMENT_ROOT'] . CLASSES_DIR . "/Request.php";
+	require_once $_SERVER['DOCUMENT_ROOT'] . CLASSES_DIR . "/EmailSender.php";
+
+	function __autoload($class_name) {
+		require_once $_SERVER['DOCUMENT_ROOT'] . CLASSES_DIR . "/$class_name.php";
+	}
+
+	function include_css() {
+
+		$page_css = "";
+
+		foreach ($GLOBALS['page_css'] as $css) {
+			$page_css .= '<link href="' . CSS_DIR . '/' . $css . '" type="text/css" rel="stylesheet">';
+		}
+
+		return $page_css;
+	}
+
+	function include_js() {
+
+		$page_js = "";
+
+		foreach ($GLOBALS['page_js'] as $js) {
+			$page_js .= '<script type="text/javascript" src="' . JS_DIR . '/' . $js . '"></script>';
+		}
+
+		return $page_js;
+	}
+
+	function include_partial($partial, $params = null) {
+
+		if (!empty($params)) {
+			foreach($params as $key => $param) {
+				$$key = $param;
+			}
+		}
+
+		$page_request = $GLOBALS["page_request"];
+		$secure_user = $GLOBALS["secure_user"];
+
+		include $_SERVER['DOCUMENT_ROOT'] . PARTIALS_DIR . "/$partial.php";
+	}
+
+	function get_script_name() {
+		return basename($_SERVER['PHP_SELF']);
+	}
