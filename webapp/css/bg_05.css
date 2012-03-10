@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('black-bg.css');
+
+body {
+	border-top:3px solid #f8c100;
+	color:#5A5A5A;
+	background:url(../images/backgrounds/background_05.jpg) no-repeat center top #000 fixed;
+	}
+	
+	
+.cont_round_center {
+    background:none repeat scroll 0 0 rgba(18, 17, 17, 0.6);
+}
+
+.cont_round_center.home {
+    background:none;
+}
+
+.banner_bottom_shadow {
+    background: url("../images/wt2-banner_bottom_shadow.png") no-repeat scroll center top transparent;
+    display: block;
+    height: 30px;
+}
+
+.cont_round_center.home .banner_bottom_shadow {
+	display:none;
+	}
+	
+.mzr_topbot_01 {
+    margin: 0px 0 0 !important;
+	}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+.splcolumn .one_third {
+	position:relative;
+	margin-right:0%;
+	float:left;
+	margin-bottom:2.25em;
+	width:33.3%;
+	
+	}
+
+.splcolumn .title_header h2 {
+	margin-top:0; font-size:24px; margin-bottom:0.8em !important;
+	font-family: 'Holtwood One SC', serif;
+	}
+	
+.splcolumn .imgthumb {
+	display:none;
+	}
+
+.splcolumn .colone .content {
+	background:#1a1a1a; padding:10px;
+	}
+	
+	.colone_txt h2 {
+		color:#666666 !important;
+		}
+		
+	.splcolumn .colone .content a, .splcolumn .colone .content p {
+		color:#5A5A5A;
+		}
+	
+.splcolumn .coltwo .content {
+	background:#5c9701; padding:10px; color:#fff !important;
+	}
+	
+	.coltwo_txt h2 {
+		color:#5c9701 !important;
+		}
+	
+	.splcolumn .coltwo .content a, .splcolumn .coltwo .content p {
+		color:#eae9e5;
+		}
+	
+.splcolumn .colthree .content {
+	background:#ffce0c; padding:10px; color:#000 !important;
+	}
+	
+	.colthree_txt h2 {
+		color:#ffce0c !important;
+		}
+
+	.splcolumn .colthree .content a, .splcolumn .colthree .content p {
+		color:#000;
+		}

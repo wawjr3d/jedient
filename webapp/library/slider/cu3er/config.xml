@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cu3er>
+
+
+	<settings>
+
+<auto_play>
+<defaults symbol="circular"/>
+<tweenIn/>
+<tweenOut/>
+<tweenOver/>
+</auto_play>
+
+<prev_button>
+<defaults round_corners="5,5,5,5"/>
+<tweenOver tint="0xFFFFFF" scaleX="1.1" scaleY="1.1"/>
+<tweenOut tint="0x000000"/>
+</prev_button>
+
+<prev_symbol>
+<tweenOver tint="0x000000"/>
+</prev_symbol>
+
+<next_button>
+<defaults round_corners="5,5,5,5"/>
+<tweenOver tint="0xFFFFFF" scaleX="1.1" scaleY="1.1"/>
+<tweenOut tint="0x000000"/>
+</next_button>
+
+<next_symbol>
+<tweenOver tint="0x000000"/>
+</next_symbol>
+</settings>
+
+<slides>
+	
+
+
+<!--
+ you should use absolute urls with http://wwww etc 
+-->
+<slide>
+<link target="_blank">search-engine-ranking.html</link>
+<url>images/slider1.jpg</url>
+</slide>
+<transition direction="down" slicing="vertical" num="4" shader="flat" z_multiplier="2"/>
+
+<slide>
+<url>images/slider2.jpg</url>
+<link target="_self">#</link>        
+<description>
+<link target="_self">#</link>    
+<heading>This is my heading text</heading>
+<paragraph>Paragraph text goes here!</paragraph>
+</description>
+
+</slide>
+<transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
+
+<slide>
+<url>images/slider3.jpg</url>
+</slide>
+<transition direction="up" slicing="vertical" num="3" shader="none" z_multiplier="2"/>
+
+<slide>
+<url>images/slider4.jpg</url>
+
+</slide>
+<transition direction="left" slicing="vertical" num="10" shader="none" z_multiplier="2"/>
+</slides>
+
+</cu3er>
+
