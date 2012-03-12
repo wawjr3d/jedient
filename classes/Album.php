@@ -1,5 +1,5 @@
 <?php
-	require_once dirname(__FILE__) . "/base/BaseItem.p";
+	require_once dirname(__FILE__) . "/base/BaseItem.php";
 	require_once dirname(__FILE__) . "/PhotoDAO.php";
 
 	class Album extends BaseItem {
