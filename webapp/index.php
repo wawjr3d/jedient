@@ -1,10 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>JEDI Entertainment - QA</title>
-	<!-- Main Style Sheets - Change Theme -->
-	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<?php include_once "includes/common-head.php"; ?>
+
 	<style type="text/css">body { background-attachment: scroll;}</style>
 	<!--[if IE]>
 	        <link rel="stylesheet" type="text/css" href="css/style_ie.css" />

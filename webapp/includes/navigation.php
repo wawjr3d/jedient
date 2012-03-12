@@ -16,8 +16,8 @@
         </ul>
       </li>
       <li><a href="events.html"><strong>Events</strong></a></li>
-      <li><a href="about-us.html"><strong>About Us</strong></a></li>
-      <li class="first"><a href="index.html"><strong>Home</strong></a>
+      <li><a href="about-us.php"><strong>About Us</strong></a></li>
+      <li class="first"><a href="index.php"><strong>Home</strong></a>
         <ul style="overflow:visible;">
           <li><a href="index-full-slider.html">Full Page Slider</a> </li>
           <li><a href="index.html">Nivo Slider</a></li>
