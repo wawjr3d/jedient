@@ -21,33 +21,13 @@
 	<link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<div id="top-menu2main">
-		<div id="top-menu2">
-			<div id="logo">
-				<a href="index.html" class="logoswitch"> <img title="JEDI Entertainment" src="images/logo_scroll.png" alt="JEDI Entertainment" /> </a>
-			</div>
-	        <!--#include virtual="includes/navigation.html" -->
-		</div>
-	</div>
+	<?php include_once "includes/top-menu.php"; ?>
           
 	<!-- Page Full Container -->
 	<div id="page">
 	  <!-- Page Middle Container -->
-	  <div class="headerfull">
-	    <div class="midarea inheaderbg">
-	      <!-- Header - Start Here -->
-	      <div class="header-inner">
-	        <div id="logo">
-	        <a href="index.html" class="logoswitch"> <img title="JEDI Entertainment" src="images/Jedi_Logo_v2.png" alt="JEDI Entertainment" /> </a>
-	       
-	        </div>
-	        <div class="header-in-right">
-	          <!--#include virtual="includes/navigation.html" -->
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- Header - End Here -->
+		<?php include_once "includes/header.php"; ?>
+		
 	  <div class="cont_round_center home">
 	    
 	    <div class="clear"></div>
@@ -61,10 +41,10 @@
 	          <div id="slider" class="nivoSlider"> 
 	          <img src="images/slider1.jpg" alt="" width="930px" /> <a href="#"><img src="images/slider2.jpg" width="930px" alt="" title="This is an example of a caption" /></a> <img src="images/slider3.jpg" width="930px" alt="" /> <img src="images/slider4.jpg" width="930px" alt="" /> </div>
 	          <script type="text/javascript">
-	    $(window).load(function() {
-	        $('#slider').nivoSlider();
-	    });
-	    </script>
+					    $(window).load(function() {
+					        $('#slider').nivoSlider();
+					    });
+				    </script>
 	        </div>
 	        <div class="sldier-right"><a class="nivo-nextNav">Next</a></div>
 	      </div>
@@ -138,7 +118,7 @@
 	    <!-- Mid Area - End Here -->
 	  </div>
 	  
-	  <!--#include virtual="includes/footer.html" -->
+	  <?php include_once "includes/footer.php"; ?>
 	  <div class="clear"></div>
 	</div>
 	<!-- Page Full Container - End -->
