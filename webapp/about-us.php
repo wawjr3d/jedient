@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<? $pageTitle = "About Us"; ?>
 	<?php include_once "includes/common-head.php"; ?>
 
 <!--[if IE]>

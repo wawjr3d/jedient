@@ -2,20 +2,20 @@
 <div id="navigation">
   <div id="navigation-main">
     <ul>
-      <li class="last"><a href="blog.html"><strong>Blog</strong></a>
+      <li class="last"><a href="blog.php"><strong>Blog</strong></a>
         <ul>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.php">Blog</a></li>
           <li class="last"><a href="archive.html">Archive</a></li>
         </ul>
       </li>
       <li><a href="contactus.php"><strong>Contact Us</strong></a></li>
-      <li><a href="gallery.html"><strong>Gallery</strong></a>
+      <li><a href="gallery.php"><strong>Gallery</strong></a>
         <ul>
-          <li><a href="gallery.html">Gallery Archive</a></li>
-          <li class="last"><a href="gallery-single.html">Gallery Single</a></li>
+          <li><a href="gallery.php">Gallery Archive</a></li>
+          <li class="last"><a href="gallery-single.php">Gallery Single</a></li>
         </ul>
       </li>
-      <li><a href="events.html"><strong>Events</strong></a></li>
+      <li><a href="events.php"><strong>Events</strong></a></li>
       <li><a href="about-us.php"><strong>About Us</strong></a></li>
       <li class="first"><a href="index.php"><strong>Home</strong></a>
         <ul style="overflow:visible;">

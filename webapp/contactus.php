@@ -30,6 +30,7 @@ if(isset($_SESSION['sent']))
 <!DOCTYPE HTML>
 <html>
 <head>
+	<? $pageTitle = "Contact Us"; ?>
 	<?php include_once "includes/common-head.php"; ?>
 	
 <!--[if IE]>
