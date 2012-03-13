@@ -1,4 +1,4 @@
-#jQuery autocomplete plugin
+#JEDI
 I wanted to use an autocomplete but did not want to be restricted to using jquery UI's version. 
 
 ##TODO
