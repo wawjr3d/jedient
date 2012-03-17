@@ -17,6 +17,17 @@
 	<!-- Nivo Sldier -->
 	<script type="text/javascript" src="library/slider/jquery.nivo.slider.pack.js"></script>
 	<link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+		.home-slogan-box-inner {
+			padding: 18px 50px;
+		}
+	
+		.home-slogan-box-inner h2 {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	</style>
 </head>
 <body>
 	<?php include_once "includes/top-menu.php"; ?>
@@ -51,7 +62,7 @@
 	      <!-- Home Slogan Box - Start here -->
 	      <div id="home-slogan-box">
 	        <div class="home-slogan-box-inner txtalctr">
-	          <h2><a href="#"> You Will Discover There Are World of Themes Where You Have Never Been To </a></h2>
+	          <h2><?php include_once "includes/latest-tweet.php"; ?></h2>
 	        </div>
 	      </div>
 	      <!-- Home Slogan Box - End here -->
