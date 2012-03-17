@@ -7,8 +7,6 @@
 * Create or choose event page view
 * Pick homepage view
 * Figure out SSL
-* Get transparent logo in place
-* Create smaller version of transparent logo for scroll menu
 * Video player solution
 * Music player solution
 
@@ -17,3 +15,5 @@
 * Add last 5 tweets to footer (#jedient currently not returning data)
 
 ##DONE
+* Get transparent logo in place
+* Create smaller version of transparent logo for scroll menu
