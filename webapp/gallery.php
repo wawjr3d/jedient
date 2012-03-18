@@ -1,3 +1,15 @@
+<?php
+	require_once "../config/config.php";
+	
+	$photoDAO = new PhotoDAO();
+	$photos = $photoDAO->getAll();
+	
+	$eventIds = array();
+	
+	foreach($photos as $photo) {
+		$eventIds["" . $photo->getEventId()] = 1;
+	}
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -35,9 +47,13 @@
           <li>
             <ul>
               <li class="segment-0 selected-0"><a href="#" data-value="all">All</a></li>
-              <li class="segment-1"><a href="#" data-value="webapps">Web Apps</a></li>
-              <li class="segment-2"><a href="#" data-value="corporate">Corporate</a></li>
-              <li class="segment-3"><a href="#" data-value="advertisements">Advertisements</a></li>
+              <?php
+              	$i = 1;
+              	foreach($eventIds as $eventId => $count) {
+              		echo "<li class='segment-$i'><a href='#' data-value='event-$eventId'>Event $eventId</a></li>";
+              		$i++;
+              	}
+              ?>
             </ul>
           </li>
         </ul>
@@ -45,18 +61,16 @@
         <div class="ptpgallery" id="maingallery">
           <!--read the documentation to understand what's going on here -->
           <ul id="list" class="liststgrid">
-            <li data-id="id-1" class="webapps"><a href="images/bigimages/preview_1.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_1.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-2" class="corporate"><a href="images/bigimages/preview_2.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_2.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-3" class="webapps"><a href="images/bigimages/preview_3.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_3.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-4" class="webapps"><a href="images/bigimages/preview_4.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_4.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-5" class="webapps"><a href="images/bigimages/preview_5.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_5.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-6" class="advertisements"><a href="images/bigimages/preview_6.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_6.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-7" class="advertisements"><a href="images/bigimages/preview_7.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_7.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-8" class="advertisements"><a href="images/bigimages/preview_8.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_8.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-9" class="corporate"><a href="images/bigimages/preview_9.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_9.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-10" class="corporate"><a href="images/bigimages/preview_10.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_10.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-11" class="webapps"><a href="images/bigimages/preview_6.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_11.jpg" alt="Title Here" /></a> </li>
-            <li data-id="id-14" class="graphic"><a href="images/bigimages/preview_5.jpg" rel="prettyPhoto[gallery1]"><img src="images/data_img_12.jpg" alt="Title Here" /></a> </li>
+          	<?php
+          		foreach($photos as $photo) {
+          			$id = $photo->getId();
+          			$title = $photo->getTitle();
+          			$image = $photo->getImage();
+          			$thumbnail = $photo->getThumbnail();
+          			$eventId = $photo->getEventId();
+          			echo "<li data-id='id-$id' class='event-$eventId'><a href='$image' rel='prettyPhoto[gallery1]''><img src='$thumbnail' alt='$title' /></a> </li>"; 
+          		}
+          	?>
           </ul>
         </div>
         <div class="clear"></div>

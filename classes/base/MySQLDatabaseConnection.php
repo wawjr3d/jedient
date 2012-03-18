@@ -3,9 +3,9 @@
 	class MySQLDatabaseConnection {
 
 		private $dbAddress = 'localhost';
-		private $dbUsername = 'cms';
-		private $dbPassword = 'cms1';
-		private $dbName = 'cms';
+		private $dbUsername = 'jedient';
+		private $dbPassword = 'jedient1';
+		private $dbName = 'jedient';
 		private $result = null;
 		private $connection = null;
 

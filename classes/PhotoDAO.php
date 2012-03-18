@@ -3,9 +3,9 @@
 
 	class PhotoDAO extends BaseDAO {
 		
-		const SELECT_ALL_FROM = "SELECT id, file, album_id, is_active, updated_time FROM ";
+		const SELECT_ALL_FROM = "SELECT id, title, image, thumbnail, event_id, is_active, updated_time FROM ";
 		const TABLE_NAME = "`photo`";
-		const INSERT_FIELDS = "file, album_id, is_active";
+		const INSERT_FIELDS = "title, image, thumbnail, event_id, is_active";
 		const ITEM_CLASS = "Photo";
 
 		public function populateItem(&$photo, $data) {
@@ -14,8 +14,10 @@
 			
 			if ($photo instanceof $itemClass) {
 				$photo->setId($data["id"]);
-				$photo->setFile($data["file"]);
-				$photo->setAlbumId($data["album_id"]);
+				$photo->setTitle($data["title"]);
+				$photo->setImage($data["image"]);
+				$photo->setThumbnail($data["thumbnail"]);
+				$photo->setEventId($data["event_id"]);
 				$photo->setIsActive($data["is_active"]);
 				$photo->setUpdatedTime($data["updated_time"]);
 				
@@ -25,23 +27,27 @@
 			return false;
 		}
 			
-		public function getByAlbumId($album_id) {
-			return $this->getByQuery(self::SELECT_ALL_FROM . self::TABLE_NAME . " WHERE album_id=$album_id ORDER BY id DESC");
+		public function getByEventId($event_id) {
+			return $this->getByQuery(self::SELECT_ALL_FROM . self::TABLE_NAME . " WHERE event_id=$event_id ORDER BY id DESC");
 		}
 
-		public function deleteByAlbumId($album_id) {
-			return $this->getByQuery("UPDATE " . self::TABLE_NAME . " SET is_active=0 WHERE album_id=$album_id");
+		public function deleteByEventId($event_id) {
+			return $this->getByQuery("UPDATE " . self::TABLE_NAME . " SET is_active=0 WHERE event_id=$event_id");
 		}
 			
 		protected function getInsertValues($item) {
-			return "('" . addslashes($item->getFile()) . "', "
-				 . "'" . addslashes($item->AlbumId()) . "', "
+			return "('" . addslashes($item->getTitle()) . "', "
+				 . "'" . addslashes($item->getImage()) . "', "
+				 . "'" . addslashes($item->getThumbnail()) . "', "
+				 . "'" . addslashes($item->getEventId()) . "', "
 				 . "'" . addslashes($item->isActive()) . "')";
 		}
 		
 		protected function getUpdateValues($item) {
-			return "file='" . addslashes($item->getFile()) . "', "
-				 . "album_id='" . addslashes($item->getAlbumId()) . "', "
+			return "title='" . addslashes($item->getTitle()) . "', "
+				 . "image='" . addslashes($item->getImage()) . "', "
+				 . "thumbnail='" . addslashes($item->getThumbnail()) . "', "
+				 . "event_id='" . addslashes($item->getEventId()) . "', "
 				 . "is_active='" . addslashes($item->isActive()) . "'";
 		}
 	}

@@ -142,42 +142,8 @@ if(isset($_SESSION['sent']))
                 <small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Evatt+Australian+Capital+Territory+2617,+Australia&amp;sll=37.0625,-95.677068&amp;sspn=29.496064,84.462891&amp;ie=UTF8&amp;oi=geospell&amp;cd=1&amp;geocode=FbbA5v0dxKziCA&amp;split=0&amp;hq=&amp;hnear=Evatt+Australian+Capital+Territory,+Australia&amp;z=14&amp;ll=-35.209034,149.073092" style="color:#0000FF;text-align:left">View Larger Map</a></small> </div>
             </div>
           </div>
-          <div class="sidebar">
-            <div class="widget">
-              <h2 class="title"><span>Recent News</span></h2>
-              <div class="recentpost">
-                <ul>
-                  <li><a href="#"> <img src="images/recentpost-img-01.jpg" alt="" /><span>30 Examples of Smart Print XHTML Advertisement</span> </a></li>
-                  <li><a href="#"> <img src="images/recentpost-img-02.jpg" alt="" /><span>20 Examples of Smart Print html Advertisement</span> </a></li>
-                  <li><a href="#"> <img src="images/recentpost-img-03.jpg" alt="" /><span>30 Examples of Smart Print XHTML Advertisement</span> </a></li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="widget">
-              <h2 class="title"><span>Latest Feed</span></h2>
-              <div class="newsfeed">
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-                  <li>Ut enim ad minim veniam, quis nostrud exercitation.</li>
-                  <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li>Excepteur sint occaecat cupidatat non proident.</li>
-                </ul>
-              </div>
-            </div>
-               
-            <div class="accordian">
-              <ul>
-                <li>Quisque at erat vitae</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, lorem et consectetur ultricies, nulla lacus iaculis odio, in laoreet lacus nisi vitae dolor. In commodo aliquet orci.</li>
-                <li>Sed euismod massa</li>
-                <li>Mauris bibendum justo sit amet lectus laoreet faucibus. Aliquam cursus, diam sed lacinia ultrices, urna ipsum auctor lacus, id vulputate ante ligula aliquam odio. Fusce feugiat risus at nisl.</li>
-                <li>Proin et orci sit amet</li>
-                <li>Sed vitae magna. Aliquam faucibus, felis ullamcorper feugiat semper, tortor leo tincidunt nibh, a faucibus lorem magna a nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-              </ul>
-            </div>
-            
-          </div>
+          
+          <?php include_once "includes/sidebar.php"; ?>
         </div>
         <div class="clear"></div>
         <div class="clear"></div>

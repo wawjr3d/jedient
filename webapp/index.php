@@ -71,40 +71,20 @@
 	        <div id="wrapper-content">
 					<div id="content">
 						<div class="one_fourth">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon1.png" alt=""  class="alignleft"/>Simple.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon1.png" alt=""  class="alignleft"/>Jealousy.</h1>
 							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
 						</div>
 						<div class="one_fourth">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon2.png" alt=""  class="alignleft"/>Unique.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon2.png" alt=""  class="alignleft"/>Encouraged.</h1>
 							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
 						</div>
 						<div class="one_fourth">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon3.png" alt=""  class="alignleft"/>Fresh.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon3.png" alt=""  class="alignleft"/>Driven.</h1>
 							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
 						</div>
 						<div class="one_fourth last">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon4.png" alt=""  class="alignleft"/>Elegant.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon4.png" alt=""  class="alignleft"/>Intelligence.</h1>
 							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
-						</div>
-						<div class="clear"></div>
-						<div class="separator"></div>
-						<div class="one_third">
-							<img src="./images/data/pic1.jpg" alt="" class="frame"/>
-							<h3>Creative Design</h3>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Pellentesque... </p>
-							<span class="btn_readmore floatleft"><p> <a class="button black lt big" href="#"><span> Read More </span></a> </p></span>
-						</div>
-						<div class="one_third">
-							<img src="./images/data/pic2.jpg" alt=""  class="frame"/>
-							<h3>Wordpress Design</h3>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Pellentesque... </p>
-							<span class="btn_readmore floatleft"><p> <a class="button black lt big" href="#"><span> Read More </span></a> </p></span>
-						</div>
-						<div class="one_third last">
-							<img src="./images/data/pic3.jpg" alt=""  class="frame"/>
-							<h3>Setting Application</h3>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Pellentesque... </p>
-							<span class="btn_readmore floatleft"><p> <a class="button black lt big" href="#"><span> Read More </span></a> </p></span>
 						</div>
 						<div class="clear"></div>
 					</div><!-- #content -->
@@ -117,8 +97,8 @@
 	      <!-- Blockquote - Start here -->
 	      <div class="clearboth">
 	        <blockquote class="home">
-	          <div class="quoteb"> Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
-	            <div class="author">Dr. Redhen kurt</div>
+	          <div class="quoteb"> Pittsburgh made me who I am, I want to stay real and show love.
+	            <div class="author">JEDI</div>
 	          </div>
 	        </blockquote>
 	      </div>

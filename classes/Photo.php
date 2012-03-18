@@ -1,20 +1,20 @@
 <?php
 	require_once dirname(__FILE__) . "/base/BaseItem.php";
-	require_once dirname(__FILE__) . "/AlbumDAO.php";
 
 	class Photo extends BaseItem {
 
-		private $file = ""; 
-		private $albumId = 0;
+		private $title = "";
+		private $image = "";
+		private $thumbnail = "";  
+		private $eventId = 0;
 		
-		private $album = null;
-		
-
-		public function getFile() { return $this->file; }
-		public function getAlbumId() { return $this->albumId; }
+		public function getTitle() { return $this->title; }
+		public function getImage() { return $this->image; }
+		public function getThumbnail() { return $this->thumbnail; }
+		public function getEventId() { return $this->eventId; }
 					
-		public function setFile($value) { $this->file = $value; }
-		public function setAlbumId($value) { $this->albumId = $value; }
-		
-		public function toJSON() { return json_encode(get_object_vars($this)); }
+		public function setTitle($value) { $this->title = $value; }
+		public function setImage($value) { $this->image = $value; }
+		public function setThumbnail($value) { $this->thumbnail = $value; }
+		public function setEventId($value) { $this->eventId = $value; }
 	}

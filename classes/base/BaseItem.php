@@ -16,7 +16,4 @@
 		public function setInDB($value) { $this->inDB = (bool) $value; }
 		public function setIsActive($value) { $this->isActive = (bool) $value; }
 		public function setUpdatedTime($value) { $this->updatedTime = $value; }
-		
-				// privates not accessible
-		abstract public function toJSON();
 	}

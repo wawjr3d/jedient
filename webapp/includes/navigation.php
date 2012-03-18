@@ -2,12 +2,7 @@
 <div id="navigation">
   <div id="navigation-main">
     <ul>
-      <li class="last"><a href="blog.php"><strong>Blog</strong></a>
-        <ul>
-          <li><a href="blog.php">Blog</a></li>
-          <li class="last"><a href="archive.html">Archive</a></li>
-        </ul>
-      </li>
+      <li class="last"><a href="blog.php"><strong>Blog</strong></a></li>
       <li><a href="contactus.php"><strong>Contact Us</strong></a></li>
       <li><a href="gallery.php"><strong>Gallery</strong></a>
         <ul>
