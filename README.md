@@ -2,8 +2,6 @@
 
 ##TODO
 * Fill in content
-* Set up DB
-* Hook up php classes to pages
 * Create or choose event page view
 * Pick homepage view
 * Figure out SSL
@@ -13,6 +11,8 @@
 ##IN PROGRESS
 * Use twitter API to pull in latest tweet (#jedient currently not returning data)
 * Add last 5 tweets to footer (#jedient currently not returning data)
+* Set up DB
+* Hook up php classes to pages
 
 ##DONE
 * Get transparent logo in place

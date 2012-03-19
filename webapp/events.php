@@ -1,3 +1,11 @@
+<?php
+	require_once "../config/config.php";
+	
+	$eventDAO = new EventDAO();
+	$events = $eventDAO->getAll();
+	
+	die(var_dump($events));
+?>
 <!DOCTYPE HTML>
 <html>
 <head>

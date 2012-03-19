@@ -39,15 +39,15 @@
 			return "('" . addslashes($item->getTitle()) . "', "
 				 . "'" . addslashes($item->getImage()) . "', "
 				 . "'" . addslashes($item->getThumbnail()) . "', "
-				 . "'" . addslashes($item->getEventId()) . "', "
-				 . "'" . addslashes($item->isActive()) . "')";
+				 . $item->getEventId() . ", "
+				 . $item->isActive() . ")";
 		}
 		
 		protected function getUpdateValues($item) {
 			return "title='" . addslashes($item->getTitle()) . "', "
 				 . "image='" . addslashes($item->getImage()) . "', "
 				 . "thumbnail='" . addslashes($item->getThumbnail()) . "', "
-				 . "event_id='" . addslashes($item->getEventId()) . "', "
-				 . "is_active='" . addslashes($item->isActive()) . "'";
+				 . "event_id=" . $item->getEventId() . ", "
+				 . "is_active=" . $item->isActive();
 		}
 	}
