@@ -3,8 +3,7 @@
 	
 	$eventDAO = new EventDAO();
 	$events = $eventDAO->getAll();
-	
-	die(var_dump($events));
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -39,82 +38,32 @@
     <!-- Content Area - Start Here -->
     <div class="content">
       <div class="midarea">
-        <h2 class="intitle"> <span class="title">Brilliant Work</span> <span class="title_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</span> </h2>
-        <ul class="intercont">
-          <li>
-            <ul>
-              <li class="segment-0 selected-0"><a href="#" data-value="all">All</a></li>
-              <li class="segment-1"><a href="#" data-value="webapps">Web Apps</a></li>
-              <li class="segment-2"><a href="#" data-value="corporate">Corporate</a></li>
-              <li class="segment-3"><a href="#" data-value="advertisements">Advertisements</a></li>
-              <li class="segment-4"><a href="#" data-value="print">Print</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="clear"></div>
-        <div class="ptpgallery" id="mainportfolio">
-          <ul id="list" class="liststgrid portfolio3">
-            <li data-id="id-1" class="corporate"> <a href="images/bigimages/preview_1.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_01.jpg" alt="Title Here" /></a>
-              <h2><a href="#">Fluid Layout in CSS &amp; HTML5</a></h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-2" class="webapps"> <a href="images/bigimages/preview_2.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_02.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui. </p>
-            </li>
-            <li data-id="id-3" class="webapps"> <a href="images/bigimages/preview_3.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_03.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui. </p>
-            </li>
-            <li data-id="id-4" class="corporate"><a href="images/bigimages/preview_4.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_04.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-5" class="advertisements"><a href="images/bigimages/preview_5.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_05.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-6" class="advertisements"> <a href="images/bigimages/preview_6.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_06.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-7" class="corporate"><a href="images/bigimages/preview_7.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_03.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-8" class="print"> <a href="images/bigimages/preview_8.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_02.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-9" class="webapps"> <a href="images/bigimages/preview_9.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_01.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-10" class="print"> <a href="images/bigimages/preview_10.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_05.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-11" class="webapps"> <a href="images/bigimages/preview_5.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_04.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-            <li data-id="id-12" class="print"> <a href="images/bigimages/preview_4.jpg" rel="prettyPhoto[gallery1]"><img src="images/portfolio_06.jpg" alt="Title Here" /></a>
-              <h2>Fluid Layout in CSS &amp; HTML5</h2>
-              <div class="meta">by <span>John Doe</span> on <span>Aughust 23, 2011</span></div>
-              <p class="excerpt">Nulla tincidunt, urna nec luctus aliquet, tortor libero congue elit, eu aliquet leo nisl quis dui.</p>
-            </li>
-          </ul>
+        <h2 class="intitle"> <span class="title">Events</span> <span class="title_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</span> </h2>
+        <div id="content" class="middle-inner">
+        	<div class="main_container">
+        		<div class="clear"></div>
+        	
+        		<ol class="olstyle_01"> 
+        			<?php
+        				foreach($events as $event) {
+									$date = date("F j, Y \a\\t g:ia", strtotime($event->getDate()));
+									$venue = $event->getVenue();
+									$address = $event->getAddress();
+									$mapLink = $event->getMapLink();
+									$additionalDetails = $event->getAdditionalDetails();
+							?>
+							<li>
+								<h2><?=$venue?></h2>
+								Where: <?=$address?> (<a href="<?=$mapLink?>" class="clrpink">Map It!</a>)<br/>
+								When: <?=$date?>
+								
+								<h4>Additional Details</h4>
+								<p><?=$additionalDetails?></p>
+							</li>
+							<?php	} ?>
+        		</ol>
+        	</div>
+        	<?php include "includes/sidebar.php"; ?>
         </div>
         <div class="clear"></div>
         <div class="clear"></div>
