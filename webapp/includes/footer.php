@@ -32,7 +32,7 @@
           <div class="footer-widget01">
             <h3> Blog feedfrom </h3>
             <div class="footercontent blogfeed">
-              <ul>
+			  <ul>
                 <li><a href="#"> Pellentesque habitant morbi </a></li>
                 <li><a href="#"> Vestibulum tortor quam, feugiat vitae </a></li>
                 <li><a href="#"> Morbi tristique senectus et netus </a></li>

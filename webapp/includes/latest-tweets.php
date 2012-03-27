@@ -1,7 +1,7 @@
 <?php
 		$endpoint = "http://search.twitter.com/search.json";
 		
-		$data = array("q" => "#agileuxnyc",
+		$data = array("q" => "#jedi",
               		"result_type" => "recent",
               		"rpp" => isset($howmany_tweets) ? $howmany_tweets : 1);
 
@@ -24,7 +24,7 @@
 		  	
 		  	$tweet_link = "http://www.twitter.com";
 		
-		  	echo "<a href='$tweet_link'>$tweet_text</a>";
+		  	echo "<a href='$tweet_link' target='_blank'>$tweet_text</a>";
 		} else {
 			echo "<ul>";
 	  	foreach($tweets as $tweet) {
@@ -34,7 +34,7 @@
 		  	
 		  	$tweet_link = "http://www.twitter.com";
 		
-		  	echo "<li><a href='$tweet_link'>$tweet_text</a></li>";
+		  	echo "<li><a href='$tweet_link' target='_blank'>$tweet_text</a></li>";
 	  	}
 	  	echo "</ul>";
 		}

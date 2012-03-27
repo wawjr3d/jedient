@@ -72,19 +72,19 @@
 					<div id="content">
 						<div class="one_fourth">
 							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon1.png" alt=""  class="alignleft"/>Jealousy.</h1>
-							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
+							<span>In life you will experience Jealousy in at least two ways, your jealousy toward others or others jealousy toward you. If you have what they don't keep working because someone is coming for it. If what you want is what they have, keep working and maybe you can get.</span>
 						</div>
 						<div class="one_fourth">
 							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon2.png" alt=""  class="alignleft"/>Encouraged.</h1>
-							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
+							<span>Whether you push yourself, or you have the support of others, always have hope in yourself and move forward. Your encouragement starts within and the belief that you are capable of anything.</span>
 						</div>
 						<div class="one_fourth">
 							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon3.png" alt=""  class="alignleft"/>Driven.</h1>
-							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
+							<span>The will to push forward when things are not moving around you is what will make the difference when you are stuck between a rock and a hard place.</span>
 						</div>
 						<div class="one_fourth last">
 							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon4.png" alt=""  class="alignleft"/>Intelligence.</h1>
-							<span>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam..</span>
+							<span>True power lies in knowledge, knowledge of self and the things around you, gain knowledge to gain power.</span>
 						</div>
 						<div class="clear"></div>
 					</div><!-- #content -->
@@ -97,7 +97,7 @@
 	      <!-- Blockquote - Start here -->
 	      <div class="clearboth">
 	        <blockquote class="home">
-	          <div class="quoteb"> Pittsburgh made me who I am, I want to stay real and show love.
+	          <div class="quoteb">Seeing is believing, impossible is nothing, and the future is now.
 	            <div class="author">JEDI</div>
 	          </div>
 	        </blockquote>

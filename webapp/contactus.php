@@ -125,21 +125,20 @@ if(isset($_SESSION['sent']))
             </div>
             <div class="separator"></div>
             <div class="contactbox2">
-              <div class="contact_address"> <strong>General</strong>: whatsup@yourdomain.com<br />
-                <strong>Say hello</strong>: sayhello@yourdomain.com<br />
+              <div class="contact_address"> <strong>General</strong>: contact@jedient.com<br />
+                <strong>Booking</strong>: booking@jedient.com<br />
                 <strong>Work</strong>: newbiz@yourdomain.com<br />
                 <br />
                 <strong>Give us a Ring</strong><br />
-                (123) 456-7890 phone<br />
-                (123) 456-7890 fax <br />
+                (412) 559-9059 OR<br />
+                (412) 657-0468 <br />
                 <br />
-                <strong>Come on By</strong> <br />
-                Some Street 214-115 <br />
-                1234 BOX Tallinn Europe </div>
-              <div class="contact_map">
-                <iframe width="380" height="220" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=Evatt+Australian+Capital+Territory+2617,+Australia&amp;sll=37.0625,-95.677068&amp;sspn=29.496064,84.462891&amp;ie=UTF8&amp;oi=geospell&amp;cd=1&amp;geocode=FbbA5v0dxKziCA&amp;split=0&amp;hq=&amp;hnear=Evatt+Australian+Capital+Territory,+Australia&amp;z=14&amp;ll=-35.209034,149.073092&amp;output=embed"></iframe>
-                <br />
-                <small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Evatt+Australian+Capital+Territory+2617,+Australia&amp;sll=37.0625,-95.677068&amp;sspn=29.496064,84.462891&amp;ie=UTF8&amp;oi=geospell&amp;cd=1&amp;geocode=FbbA5v0dxKziCA&amp;split=0&amp;hq=&amp;hnear=Evatt+Australian+Capital+Territory,+Australia&amp;z=14&amp;ll=-35.209034,149.073092" style="color:#0000FF;text-align:left">View Larger Map</a></small> </div>
+			</div>
+				<!--<div class="contact_map">
+					<iframe width="380" height="220" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=Evatt+Australian+Capital+Territory+2617,+Australia&amp;sll=37.0625,-95.677068&amp;sspn=29.496064,84.462891&amp;ie=UTF8&amp;oi=geospell&amp;cd=1&amp;geocode=FbbA5v0dxKziCA&amp;split=0&amp;hq=&amp;hnear=Evatt+Australian+Capital+Territory,+Australia&amp;z=14&amp;ll=-35.209034,149.073092&amp;output=embed"></iframe>
+					<br />
+					<small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Evatt+Australian+Capital+Territory+2617,+Australia&amp;sll=37.0625,-95.677068&amp;sspn=29.496064,84.462891&amp;ie=UTF8&amp;oi=geospell&amp;cd=1&amp;geocode=FbbA5v0dxKziCA&amp;split=0&amp;hq=&amp;hnear=Evatt+Australian+Capital+Territory,+Australia&amp;z=14&amp;ll=-35.209034,149.073092" style="color:#0000FF;text-align:left">View Larger Map</a></small> 
+				</div>-->
             </div>
           </div>
           
