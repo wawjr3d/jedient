@@ -48,7 +48,7 @@
 	        <div class="sldier-left"><a class="nivo-prevNav">Prev</a></div>
 	        <div id="slider_wrap" class="mzrtop_20 theme-default">
 	          <div id="slider" class="nivoSlider"> 
-	          <img src="images/slider1.jpg" alt="" width="930px" /> <a href="#"><img src="images/slider2.jpg" width="930px" alt="" title="This is an example of a caption" /></a> <img src="images/slider3.jpg" width="930px" alt="" /> <img src="images/slider4.jpg" width="930px" alt="" /> </div>
+	          <img src="images/jonjon_knee.jpg" alt="" width="980px" /> <a href="#"><img src="images/jedi_cloudy.jpg" width="980px" alt="" title="Do or do not...there is no try." /></a> <img src="images/armsfolded.jpg" width="938px" alt="" /></div>
 	          <script type="text/javascript">
 					    $(window).load(function() {
 					        $('#slider').nivoSlider();
