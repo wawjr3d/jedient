@@ -32,8 +32,8 @@
           <div class="footer-widget01">
             <h3> Blog feedfrom </h3>
             <div class="footercontent blogfeed">
-			  <ul>
-                <li><a href="#"> Pellentesque habitant morbi </a></li>
+			  <ul>        
+				<li><a href="#"> Pellentesque habitant morbi </a></li>
                 <li><a href="#"> Vestibulum tortor quam, feugiat vitae </a></li>
                 <li><a href="#"> Morbi tristique senectus et netus </a></li>
                 <li><a href="#"> Et malesuada fames ac turpis egestas </a></li>
@@ -42,17 +42,15 @@
             </div>
           </div>
           <div class="footer-widget01">
-            <h3> Recent Post </h3>
+            <h3> Affiliates </h3>
             <div class="footercontent footer_rcpost">
               <ul>
-                <li><a href="#"> <img src="images/recentpost-img-01.jpg" alt="" /><span>30 Examples of Smart Print Advertisement</span> </a></li>
-                <li><a href="#"> <img src="images/recentpost-img-02.jpg" alt="" /><span>30 Examples of Smart Print Advertisement</span> </a></li>
-                <li><a href="#"> <img src="images/recentpost-img-03.jpg" alt="" /><span>30 Examples of Smart Print Advertisement</span> </a></li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>                
               </ul>
             </div>
           </div>
           <div id="subscribe">
-            <h3> Subscribe to Newsletter </h3>
+            <!--<h3> Subscribe to Newsletter </h3>
             <div class="footercontent">
               <div class="subscribe_row">
                 <div class="div_mbox_sub">
@@ -69,14 +67,12 @@ onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=yourfeed
                   </form>
                 </div>
               </div>
-            </div>
+            </div>-->
             <div class="address">
-              <p><img src="images/footer-logo.png" alt="" /><br />
-                PO Box 21177<br />
-                Little Lonsdale St, Melbourne<br />
-                Victoria 8011 Australia <br />
-                <br />
-                Phone: 91 172 563568 </p>
+              <p><img src="images/jedi_logo_text.png" alt="" /><br />
+                contact@jedient.com<br />
+                booking@jedient.com<br />
+                (412) 559-9059 OR (412) 657-0468
             </div>
             
           </div>

@@ -3,7 +3,7 @@
 	      <!-- Header - Start Here -->
 	      <div class="header-inner">
 	        <div id="logo">
-	        <a href="index.html" class="logoswitch"> <img title="JEDI Entertainment" src="images/Jedi_Logo_v2.png" alt="JEDI Entertainment" /> </a>
+	        <a href="index.html" class="logoswitch"> <img title="JEDI Entertainment" src="images/jedi_logo_text.png" alt="JEDI Entertainment" /> </a>
 	       
 	        </div>
 	        <div class="header-in-right">

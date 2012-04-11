@@ -41,29 +41,23 @@
 -->
 <slide>
 <link target="_blank">search-engine-ranking.html</link>
-<url>images/slider1.jpg</url>
+<url>images/jonjon_knee2.jpg</url>
 </slide>
 <transition direction="down" slicing="vertical" num="4" shader="flat" z_multiplier="2"/>
 
 <slide>
-<url>images/slider2.jpg</url>
+<url>images/jedi_cloudy2.jpg</url>
 <link target="_self">#</link>        
 <description>
 <link target="_self">#</link>    
 <heading>This is my heading text</heading>
 <paragraph>Paragraph text goes here!</paragraph>
 </description>
-
 </slide>
 <transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
 
 <slide>
-<url>images/slider3.jpg</url>
-</slide>
-<transition direction="up" slicing="vertical" num="3" shader="none" z_multiplier="2"/>
-
-<slide>
-<url>images/slider4.jpg</url>
+<url>images/armsfolded2.jpg</url>
 
 </slide>
 <transition direction="left" slicing="vertical" num="10" shader="none" z_multiplier="2"/>
