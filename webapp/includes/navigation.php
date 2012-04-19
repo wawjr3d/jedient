@@ -2,7 +2,7 @@
 <div id="navigation">
   <div id="navigation-main">
     <ul>
-      <li class="last"><a href="blog.php"><strong>Blog</strong></a></li>
+      <li class="last"><a href="http://socialstatuspgh.com/site/" target="_blank"><strong>Blog</strong></a></li>
       <li><a href="contactus.php"><strong>Contact Us</strong></a></li>
       <li><a href="gallery.php"><strong>Gallery</strong></a>
         <ul>

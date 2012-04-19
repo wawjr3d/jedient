@@ -2,10 +2,10 @@
 <html>
 <head>
 	<?php include_once "includes/common-head.php"; ?>
-
+	
 	<style type="text/css">body { background-attachment: scroll;}</style>
 	<!--[if IE]>
-	        <link rel="stylesheet" type="text/css" href="css/style_ie.css" />
+			<link rel="stylesheet" type="text/css" href="css/style_ie.css" />
 	<![endif]-->
 	<!-- Js Files -->
 	<script src="library/js/jquery.min.js" type="text/javascript"></script>
@@ -14,61 +14,73 @@
 	<link rel="stylesheet" href="library/prettyphotos/css/prettyPhoto.css" type="text/css" />
 	<script src="library/prettyphotos/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="library/js/custom-imp.js" type="text/javascript"></script>
-	<!-- Nivo Sldier -->
-	<script type="text/javascript" src="library/slider/jquery.nivo.slider.pack.js"></script>
-	<link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
-	<style type="text/css">
-		.home-slogan-box-inner {
-			padding: 18px 50px;
-		}
-	
-		.home-slogan-box-inner h2 {
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
-	</style>
-</head>
-<body>
+	<!-- CU3ER Slider -->
+	<script type="text/javascript" language="javascript" src="library/slider/cu3er/js/AC_RunActiveContent.js"></script>
+	<script type="text/javascript" src="library/slider/cu3er/js/swfobject/swfobject.js"></script>
+	</head>
+	<body>
+
 	<?php include_once "includes/top-menu.php"; ?>
-          
+			  
 	<!-- Page Full Container -->
 	<div id="page">
-	  <!-- Page Middle Container -->
+		<!-- Page Middle Container -->
 		<?php include_once "includes/header.php"; ?>
-		
+	 
 	  <div class="cont_round_center home">
-	    
-	    <div class="clear"></div>
-	    <!-- Mid Area - Start Here -->
-	    <div class="midarea mzr_01">
-	      <div class="clear"></div>
-	      <!-- Slider - Start here -->
-	      <div class="slider_mbg">
-	        <div class="sldier-left"><a class="nivo-prevNav">Prev</a></div>
-	        <div id="slider_wrap" class="mzrtop_20 theme-default">
-	          <div id="slider" class="nivoSlider"> 
-	          <img src="images/jonjon_knee2.jpg" alt="" width="980px" /> <a href="#"><img src="images/jedi_cloudy2.jpg" width="980px" alt="" title="Do or do not...there is no try." /></a> <img src="images/armsfolded2.jpg" width="980px" alt="" /></div>
-	          <script type="text/javascript">
-					    $(window).load(function() {
-					        $('#slider').nivoSlider();
-					    });
-				    </script>
-	        </div>
-	        <div class="sldier-right"><a class="nivo-nextNav">Next</a></div>
-	      </div>
-	      <!-- Slider - End here -->
-	      <div class="banner_bottom_shadow"></div>
-	      <!-- Home Slogan Box - Start here -->
-	      <div id="home-slogan-box">
-	        <div class="home-slogan-box-inner txtalctr">
-	          <h2><?php include "includes/latest-tweets.php"; ?></h2>
-	        </div>
-	      </div>
-	      <!-- Home Slogan Box - End here -->
-	      <!-- Services - Start here -->
-	      <div id="services">
-	        <div id="wrapper-content">
+		
+		<!-- Mid Area - Start Here -->
+		<div class="midarea">
+		  <div class="clear"></div>
+		  
+		  <!-- Slider - Start here -->
+		  <div id="slider_wrap_main" class="mzr_topbot_01 cu3erslider">
+			
+			<script language="JavaScript" type="text/javascript">
+										if (AC_FL_RunContent == 0) {
+											alert("This page requires AC_RunActiveContent.js.");
+										} else {
+											AC_FL_RunContent(
+												'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+												'width', '977',
+												'height', '400',
+												'src', 'library/slider/cu3er/flash/cu3er',
+												'quality', 'high',
+												'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+												'align', 'middle',
+												'play', 'true',
+												'loop', 'true',
+												'scale', 'showall',
+												'wmode', 'transparent',
+												'devicefont', 'false',
+												'id', 'cu3er',
+												'name', 'cu3er',
+												'menu', 'true',
+												'allowFullScreen', 'false',
+												'allowScriptAccess','sameDomain',
+												'movie', 'library/slider/cu3er/flash/cu3er',
+												'salign', '',
+												'flashvars', 'xml=library/slider/cu3er/config.xml'
+												); //end AC code
+										}
+									 </script>
+			
+		  </div>
+		  <!-- Slider - End here -->
+
+		  <div class="banner_bottom_shadow"></div>
+		  
+		  <!-- Home Slogan Box - Start here -->
+		  <div id="home-slogan-box">
+			<div class="home-slogan-box-inner txtalctr">
+			  <h2><?php include "includes/latest-tweets.php"; ?></h2>
+			</div>
+		  </div>
+		  <!-- Home Slogan Box - End here -->
+		  
+		   <!-- Services - Start here -->
+		  <div id="services">
+			<div id="wrapper-content">
 					<div id="content">
 						<div class="one_fourth">
 							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon1.png" alt=""  class="alignleft"/>Jealousy.</h1>
@@ -89,24 +101,23 @@
 						<div class="clear"></div>
 					</div><!-- #content -->
 			</div>
-	        <div class="clear"></div>
-	      </div>
-	      <!-- Services - End here -->
-	      <div class="clearboth"></div>
-	     
-	      <!-- Blockquote - Start here -->
-	      <div class="clearboth">
-	        <blockquote class="home">
+			<div class="clear"></div>
+		  </div>
+		  <!-- Services - End here -->
+					   
+		  <!-- Blockquote - Start here -->
+		  <div class="clearboth">
+			<blockquote class="home">
 	          <div class="quoteb">Seeing is believing, impossible is nothing, and the future is now.
 	            <div class="author">JEDI</div>
 	          </div>
-	        </blockquote>
-	      </div>
-	      <!-- Blockquote - End here -->
-	    </div>
-	    <!-- Mid Area - End Here -->
+			</blockquote>
+		  </div>
+		  <!-- Blockquote - End here -->   
+		  
+		</div>
+		<!-- Mid Area - End Here -->
 	  </div>
-	  
 	  <?php include_once "includes/footer.php"; ?>
 	  <div class="clear"></div>
 	</div>
