@@ -13,6 +13,14 @@
 <!-- Nivo Sldier -->
 <script type="text/javascript" src="library/slider/jquery.nivo.slider.pack.js"></script>
 <link href="css/nivo-slider.css" type="text/css" rel="stylesheet">
+
+<script src="thirdparty/flowplayer/flowplayer-3.2.8.min.js"></script>
+<style type="text/css">
+	#player {
+		width: 400px;
+		height: 122px;
+	}
+</style>
 </head>
 <body>
 
@@ -53,6 +61,46 @@
             </div>
             <div class="three_fourth last" style="padding:20px 0 0 0;">
               <div class="theme-default">
+              	<div id="player"></div>
+              	<script type="text/javascript">
+$f("player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
+ 
+    // common clip: these properties are common to each clip in the playlist
+    clip: {
+        // by default clip lasts 5 seconds
+        duration: 5
+    },
+ 
+    // playlist with five entries
+    playlist: [
+ 
+ 
+        // another image. works as splash for the audio clip
+        {url: "images/ad_244-122.jpg", duration: 0},
+
+
+        {url: "media/audio/track26.mp3"}
+
+    ],
+ 
+    // show playlist buttons in controlbar
+    plugins:  {
+        audio: {
+            url: 'thirdparty/flowplayer/plugins/flowplayer.audio-3.2.8.swf'
+        },
+        controls: {
+            playlist: true,
+ 
+            // use tube skin with a different background color
+            //url: "http://releases.flowplayer.org/swf/flowplayer.controls-tube-.swf",
+            backgroundColor: '#aedaff'
+        }
+    }
+ 
+});
+              	</script>
+              
+              <!--
                 <div id="slider" class="nivoSlider gallery"> <img src="images/gallery-inner_01.jpg" alt="" width="726" height="476" rel="images/gallery-inner_01_thumb.jpg"/> <a href="#"><img src="images/gallery-inner_02.jpg" alt="" width="726" height="476" rel="images/gallery-inner_02_thumb.jpg" /></a> <img src="images/gallery-inner_03.jpg" alt="" width="726" height="476" rel="images/gallery-inner_03_thumb.jpg" /> <img src="images/gallery-inner_04.jpg" alt="" width="726" height="476" title="#htmlcaption" rel="images/gallery-inner_04_thumb.jpg" /> <img src="images/gallery-inner_01.jpg" alt="" width="726" height="476" rel="images/gallery-inner_01_thumb.jpg"/> <a href="#"><img src="images/gallery-inner_02.jpg" alt="" width="726" height="476" rel="images/gallery-inner_02_thumb.jpg" /></a> <img src="images/gallery-inner_03.jpg" alt="" width="726" height="476" rel="images/gallery-inner_03_thumb.jpg" /> <img src="images/gallery-inner_04.jpg" alt="" width="726" height="476" title="#htmlcaption" rel="images/gallery-inner_04_thumb.jpg" /> </div>
                 <script type="text/javascript" src="library/slider/jquery.nivo.slider.pack.js"></script>
                 <script type="text/javascript">
@@ -65,6 +113,7 @@
 			controlNavThumbsFromRel:true
 		});
         </script>
+        -->
               </div>
             </div>
           </div>
