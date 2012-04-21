@@ -4,12 +4,7 @@
     <ul>
       <li class="last"><a href="http://socialstatuspgh.com/site/" target="_blank"><strong>Blog</strong></a></li>
       <li><a href="contactus.php"><strong>Contact Us</strong></a></li>
-      <li><a href="gallery.php"><strong>Gallery</strong></a>
-        <ul>
-          <li><a href="gallery.php">Gallery Archive</a></li>
-          <li class="last"><a href="gallery-single.php">Gallery Single</a></li>
-        </ul>
-      </li>
+      <li><a href="gallery.php"><strong>Gallery</strong></a></li>
       <li><a href="events.php"><strong>Events</strong></a></li>
       <li><a href="about-us.php"><strong>About Us</strong></a></li>
       <li class="first"><a href="index.php"><strong>Home</strong></a>
