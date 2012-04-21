@@ -556,10 +556,19 @@ h4 {
 #logo a {
 	display:block;
 }
+.music-player {
+	float: right;
+	margin: 10px 0 0 0;
+}
+#top-menu2 .music-player {
+	float: left;
+	margin: 0;	
+}
 .header-in-right {
+	clear: right;
 	float:right;
 	width:auto;
-	margin:42px 0 0 0;
+	margin-top: 10px;
 }
 .header-social-icons {
 	float:left;
@@ -1038,7 +1047,7 @@ table.jqTransformTextarea tbody tr td {
 /* Top Navigation display on Scroll */
 
 #top-menu2main {
-	width: 978px;
+	width: 1000px;
 	margin: 0 auto;
 	clear: both;
 	z-index:999999;
@@ -1046,7 +1055,7 @@ table.jqTransformTextarea tbody tr td {
 
 #top-menu2 {
 	position: fixed;
-	width: 978px;
+	width: 1000px;
 	margin: -3px auto 0;
 	padding: 0px;
 	clear: both;

@@ -122,5 +122,6 @@
 	  <div class="clear"></div>
 	</div>
 	<!-- Page Full Container - End -->
+<?php include_once "includes/common-foot.php"; ?>
 </body>
 </html>

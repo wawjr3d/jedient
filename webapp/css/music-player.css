@@ -1,0 +1,123 @@
+#music-player {
+	width: 0;
+	height: 0;
+}
+	
+/* root element should be positioned relatively so that
+   child elements can be positioned absolutely */
+.music-player .controls {
+    position:relative;
+    height:40px;
+
+    /* black background with a gradient */
+    background:#000 url(../images/hulu.png) repeat-x 0 -4px;
+    width:415px;
+}
+
+/* play/pause button */
+.music-player .controls .play, .music-player .controls .pause {
+    position:absolute;
+    width: 46px;
+    height: 40px;
+    display:block;
+    text-indent:-9999em;
+    background:url(../images/hulu.png) no-repeat 10px -61px;
+    cursor:pointer;
+    border-right:1px solid #000;
+}
+
+.music-player .controls .play:hover {
+    background-position:10px -105px;
+}
+
+/* pause state */
+.music-player .controls .pause {
+    background-position:11px -148px;
+}
+
+.music-player .controls .pause:hover {
+    background-position:11px -192px;
+}
+
+/* the timeline (or "scrubber")  */
+.music-player .controls .track {
+    left:47px;
+    position:absolute;
+    cursor:pointer;
+    width:200px;
+    border-left:1px solid #999;
+    height:40px;
+}
+
+/* the draggable playhead */
+.music-player .controls .playhead {
+    position:absolute;
+    cursor:pointer;
+    background-color:#FFC500;
+    opacity:0.3;
+    filter: alpha(opacity=30);
+    width:3px;
+    height:40px;
+    border-right:1px solid #444;
+}
+
+/* buffer- and progress bars. upon runtime the width of these elements grows */
+.music-player .controls .progress, .music-player .controls .buffer {
+    position:absolute;
+    background-color:#FFC500;
+    filter: alpha(opacity=10);
+    opacity:0.1;
+    width:0px;
+    height:40px;
+}
+
+.music-player .controls .buffer {
+    background-color:#fff;
+    opacity:0.1;
+    filter: alpha(opacity=10);
+}
+
+/* time display */
+.music-player .controls .time {
+    position:absolute;
+    width:129px;
+    left: 245px;
+    padding:12px 0;
+    text-align:center;
+    border:1px solid #999;
+    border-width:0 1px;
+    font-size:12px;
+    color:#fff;
+}
+
+/* total duration in time display */
+.music-player .controls .time strong {
+    font-weight:normal;
+    color:#666;
+}
+
+/* mute / unmute buttons */
+.music-player .controls .mute, .music-player .controls .unmute {
+    position:absolute;
+    left:375px;
+    width:40px;
+    height:40px;
+    text-align:center;
+    padding:8px 0;
+    cursor:pointer;
+    text-indent:-9999em;
+    background:url(../images/hulu.png) no-repeat 5px -323px;
+}
+
+.music-player .controls .mute:hover {
+    background-position:5px -367px;
+}
+
+/* unmute state */
+.music-player .controls .unmute {
+    background-position:5px -235px;
+}
+
+.music-player .controls .unmute:hover {
+    background-position:5px -279px;
+}

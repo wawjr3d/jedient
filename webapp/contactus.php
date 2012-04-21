@@ -155,5 +155,6 @@ if(isset($_SESSION['sent']))
 	<?php include_once "includes/footer.php"; ?>
   <div class="clear"></div>
 </div>
+<?php include_once "includes/common-foot.php"; ?>
 </body>
 </html>
