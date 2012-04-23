@@ -1306,12 +1306,13 @@ table.jqTransformTextarea tbody tr td {
 /* Home Page - Slogan Box - Start here */
 	
 #home-slogan-box {
+	background: url(../images/icons/logo_twitter_withbird_200_white_blue.png) no-repeat bottom right;
 	margin:0 0 10px 0;
 	border:0px;
 }
 .home-slogan-box-inner {
 	background:url(../images/home-slogan-bg.png) no-repeat center top;
-	padding:18px;
+	padding:18px 30px;
 	font-size:17px;
 	color:#212121;
 	margin:0 0 20px 0;
