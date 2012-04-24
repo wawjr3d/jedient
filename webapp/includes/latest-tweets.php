@@ -1,11 +1,12 @@
 <?php
 	$resource = "http://search.twitter.com/search.json";
-	$hashtag = "#jedi";
+	$hashtag = "jedi";
 	$tweet_count = isset($howmany_tweets) ? $howmany_tweets : 1;
 		
-	$data = array("q" => $hashtag,
+	$data = array("q" => "#$hashtag",
               		"result_type" => "recent",
-              		"rpp" => 20);
+              		"rpp" => 20,
+              		"include_entities" => 1);
 
 	$request = implode("?", array($resource, http_build_query($data)));
 
@@ -24,9 +25,12 @@
 	foreach($tweets as $tweet) {
 		if ($i >= $tweet_count) { break; }
 			
-		if (preg_match("/$hashtag\b(?!-)/i", $tweet->text)) {
-			array_push($filteredTweets, $tweet);
-			$i++;
+		$hashtags = $tweet->entities->hashtags;
+		foreach($hashtags as $found_hashtag) {
+			if (strtolower($found_hashtag->text) == strtolower($hashtag)) {
+				array_push($filteredTweets, $tweet);
+				$i++;
+			}
 		}
 	}
 		  	
