@@ -25,8 +25,7 @@
 					<div class="footer-widget01">
             <h3> Latest Tweets </h3>
             <div class="footercontent blogfeed">
-            	<?php $howmany_tweets = 5; ?>
-            	<?php include "latest-tweets.php"; ?>
+            	<?php include "latest-tweets-5.html"; ?>
             </div>
           </div>
           <div class="footer-widget01">

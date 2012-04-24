@@ -73,7 +73,7 @@
 		  <!-- Home Slogan Box - Start here -->
 		  <div id="home-slogan-box">
 			<div class="home-slogan-box-inner txtalctr">
-			  <h2><?php include "includes/latest-tweets.php"; ?></h2>
+			  <h2><?php include "includes/latest-tweets-1.html"; ?></h2>
 			</div>
 		  </div>
 		  <!-- Home Slogan Box - End here -->
