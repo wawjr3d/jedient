@@ -72,6 +72,7 @@
 		  
 		  <!-- Home Slogan Box - Start here -->
 		  <div id="home-slogan-box">
+		  	<a href="http://www.twitter.com" class="twitter">Latest @jedi from twitter:</a>
 			<div class="home-slogan-box-inner txtalctr">
 			  <h2><?php include "includes/latest-tweets-1.html"; ?></h2>
 			</div>
