@@ -1,6 +1,6 @@
 <?php
 
-	foreach (range(1, 5) as $howmany) {
+	foreach (range(1, 5) as $howmany_tweets) {
 		ob_start();
 	
 		include dirname(__FILE__) . "/webapp/includes/latest-tweets.php";
@@ -9,7 +9,7 @@
 
 		ob_end_clean();
 	 
-		$filename = dirname(__FILE__) . "/webapp/includes/latest-tweets-$howmany.html";
+		$filename = dirname(__FILE__) . "/webapp/includes/latest-tweets-$howmany_tweets.html";
 		
 		echo "Writing $filename was ";
 		$success = file_put_contents ($filename , $filecontents);

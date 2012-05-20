@@ -1,6 +1,6 @@
 <?php
 	$feed = "http://socialstatuspgh.com/site/feed/";
-	$entry_count = isset($howmany_blog_entries) ? $howmany_blog_entries : 5;
+	$entry_count = isset($howmany_blog_entries) ? $howmany_blog_entries : 1;
 
 	$xml = simplexml_load_file($feed, null, LIBXML_NOENT);
 
