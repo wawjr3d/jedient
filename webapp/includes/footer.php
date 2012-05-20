@@ -31,19 +31,18 @@
           <div class="footer-widget01">
             <h3> Blog feedfrom </h3>
             <div class="footercontent blogfeed">
-			  <ul>        
-				<li><a href="#"> Pellentesque habitant morbi </a></li>
-                <li><a href="#"> Vestibulum tortor quam, feugiat vitae </a></li>
-                <li><a href="#"> Morbi tristique senectus et netus </a></li>
-                <li><a href="#"> Et malesuada fames ac turpis egestas </a></li>
-                <li><a href="#"> Tortor quam, feugiat vitae </a></li>
-              </ul>
+              <?php include "latest-blog-entries-5.html"; ?>
             </div>
           </div>
           <div class="footer-widget01">
             <h3> Affiliates </h3>
             <div class="footercontent footer_rcpost">
               <ul>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
                 <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>                
               </ul>
             </div>
