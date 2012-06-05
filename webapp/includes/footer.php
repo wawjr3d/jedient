@@ -4,24 +4,6 @@
       <div class="midarea">
         <div class="sepdiv"><span></span></div>
         <div class="footer-inner">
-        	<!--
-          <div class="footer-widget01" id="flickr-photos">
-            <h3> Flickr Photos </h3>
-            <div class="footercontent flickr-photos">
-              <ul class="thumb">
-                <li><a href="#"><img src="images/flickr-img-01.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-02.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-03.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-04.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-05.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-06.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-03.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-02.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="images/flickr-img-05.jpg" alt="" /></a></li>
-              </ul>
-            </div>
-          </div>
-          -->
 					<div class="footer-widget01">
             <h3> Latest Tweets </h3>
             <div class="footercontent blogfeed">
@@ -34,18 +16,20 @@
               <?php include "latest-blog-entries-5.html"; ?>
             </div>
           </div>
-          <div class="footer-widget01">
+          <div class="affiliates footer-widget01">
             <h3> Affiliates </h3>
             <div class="footercontent footer_rcpost">
               <ul>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a></li>                
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 1</li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 2</li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 3</li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 4</li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 5</li>
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 6</li>                
               </ul>
             </div>
+            <div class="prev"></div>
+            <div class="next"></div>
           </div>
           <div id="subscribe">
             <!--<h3> Subscribe to Newsletter </h3>
