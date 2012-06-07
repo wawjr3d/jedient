@@ -42,7 +42,7 @@
     <!-- Content Area - Start Here -->
     <div class="content">
       <div class="midarea">
-        <h2 class="intitle"> <span class="title">My Work Gallery</span> <span class="title_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</span> </h2>
+        <h2 class="intitle"> <span class="title">Gallery</span> <span class="title_text">View the images belpw and feel free to share the images below on Twitter or Facebook</span> </h2>
         <ul class="intercont">
           <li>
             <ul>
