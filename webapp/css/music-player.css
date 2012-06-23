@@ -42,11 +42,18 @@
 /* the timeline (or "scrubber")  */
 .music-player .controls .track {
     left:47px;
+    overflow: hidden;
     position:absolute;
     cursor:pointer;
     width:200px;
     border-left:1px solid #999;
     height:40px;
+}
+
+.music-player .controls .track marquee {
+	position: absolute;
+	padding: 8px 5px;
+	white-space: nowrap;
 }
 
 /* the draggable playhead */
