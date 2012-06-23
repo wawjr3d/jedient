@@ -56,13 +56,6 @@
 	left: 0;
 	padding: 8px 5px;
 	white-space: nowrap;
-	-moz-transition: all 3s ease-in;
-	-webkit-transition: all 3s ease-in;
-	transition: all 4s ease-in;
-}
-
-.music-player .controls .track:hover em {
-	left: -100%;
 }
 
 /* the draggable playhead */
