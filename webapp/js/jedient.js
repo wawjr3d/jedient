@@ -26,10 +26,10 @@ $f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
                                      "by",
                                      playingClip.details.author].join(" ");
         
-        $(".controls marquee").html(currentPlayingDisplay);
+        $(".controls em").html(currentPlayingDisplay);
     }
 })
 .controls("music-player-controls")
 .controls("top-music-player-controls");
 
-$(".controls .track").prepend("<marquee/>");
+$(".controls .track").prepend("<em/>");

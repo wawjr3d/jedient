@@ -50,10 +50,19 @@
     height:40px;
 }
 
-.music-player .controls .track marquee {
+.music-player .controls .track em {
 	position: absolute;
+	top: 0;
+	left: 0;
 	padding: 8px 5px;
 	white-space: nowrap;
+	-moz-transition: all 3s ease-in;
+	-webkit-transition: all 3s ease-in;
+	transition: all 4s ease-in;
+}
+
+.music-player .controls .track:hover em {
+	left: -100%;
 }
 
 /* the draggable playhead */
@@ -88,7 +97,7 @@
 .music-player .controls .time {
     position:absolute;
     width:129px;
-    left: 245px;
+    left: 247px;
     padding:12px 0;
     text-align:center;
     border:1px solid #999;
