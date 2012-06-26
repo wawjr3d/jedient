@@ -20,12 +20,10 @@
             <h3> Affiliates </h3>
             <div class="footercontent footer_rcpost">
               <ul>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 1</li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 2</li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 3</li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 4</li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 5</li>
-                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Affiliate 6</li>                
+                <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Social Status</li>
+                <li><a href="http://www.blogtalkradio.com/keepinit700" target="_blank"><img src="images/ki7rLogo.jpg" /></a> Keepin It 700 Online Radio</li>
+                <li><a href="#" target="_blank"><img src="images/splashLogo.png" /></a> Splash Squad Entertainment</li>
+                <li><a href="#" target="_blank"><img src="images/vanityLogo.jpg" /></a> Vanity Group</li>
               </ul>
             </div>
             <div class="prev"></div>
