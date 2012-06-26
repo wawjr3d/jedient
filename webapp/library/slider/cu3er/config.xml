@@ -48,11 +48,6 @@
 <slide>
 <url>images/jedi_cloudy2.jpg</url>
 <link target="_self">#</link>        
-<description>
-<link target="_self">#</link>    
-<heading>This is my heading text</heading>
-<paragraph>Paragraph text goes here!</paragraph>
-</description>
 </slide>
 <transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
 
