@@ -33,17 +33,16 @@
 </settings>
 
 <slides>
-	
-
 
 <!--
  you should use absolute urls with http://wwww etc 
 -->
+
 <slide>
-<link target="_blank">search-engine-ranking.html</link>
-<url>images/jonjon_knee2.jpg</url>
+<url>images/kentt_juice2.jpg</url>
+<link target="_self">#</link> 
 </slide>
-<transition direction="down" slicing="vertical" num="4" shader="flat" z_multiplier="2"/>
+<transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
 
 <slide>
 <url>images/jedi_cloudy2.jpg</url>
@@ -53,10 +52,24 @@
 
 <slide>
 <url>images/armsfolded2.jpg</url>
-
+<link target="_self">#</link> 
 </slide>
 <transition direction="left" slicing="vertical" num="10" shader="none" z_multiplier="2"/>
+
+<slide>
+<url>images/kentt_bandana.jpg</url>
+<link target="_self">#</link> 
+</slide>
+<transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
+
+<slide>
+<url>images/kentt_knee2.jpg</url>
+<link target="_self">#</link>        
+</slide>
+<transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
 </slides>
+
+
 
 </cu3er>
 
