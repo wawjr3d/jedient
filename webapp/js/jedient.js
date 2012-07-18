@@ -47,3 +47,15 @@ $(".controls .track")
      $currentClip.stop().css({ left: 0 });
  })
  .prepend("<em/>");
+
+
+(function() {
+    //The auto-scrolling function
+    $("#footer .affiliates .footercontent").carousel("#footer .affiliates .prev", "#footer .affiliates .next");
+    
+    function slide(){
+        $("#footer .affiliates .next").click();
+    }
+    //Launch the scroll every 2 seconds
+    var intervalId = window.setInterval(slide, 5000);
+})();

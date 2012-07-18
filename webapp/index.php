@@ -12,7 +12,6 @@
 	<script src="library/js/custom.js" type="text/javascript"></script>
 	<!-- PrettyPhoto -->
 	<link rel="stylesheet" href="library/prettyphotos/css/prettyPhoto.css" type="text/css" />
-	<link rel="stylesheet" href="css/jquery.infinite-carousel.css" type="text/css" />
 	<script src="library/prettyphotos/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="library/js/custom-imp.js" type="text/javascript"></script>
 	<!-- CU3ER Slider -->

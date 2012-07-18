@@ -3,3 +3,4 @@
 	<!-- Main Style Sheets - Change Theme -->
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<link href="css/music-player.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.infinite-carousel.css" type="text/css" />
