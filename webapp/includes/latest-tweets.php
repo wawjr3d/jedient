@@ -1,9 +1,9 @@
 <?php
 	$resource = "http://search.twitter.com/search.json";
-	$hashtag = "jedi";
+	$searchTerm = "jedipgh";
 	$tweet_count = isset($howmany_tweets) ? $howmany_tweets : 1;
 		
-	$data = array("q" => "#$hashtag",
+	$data = array("q" => "$searchTerm",
               		"result_type" => "recent",
               		"rpp" => 20,
               		"include_entities" => 1);
@@ -24,13 +24,26 @@
 	// filter out tweets not from #jedisomethingelse
 	foreach($tweets as $tweet) {
 		if ($i >= $tweet_count) { break; }
+		
+		$matched = false;
 			
 		$hashtags = $tweet->entities->hashtags;
 		foreach($hashtags as $found_hashtag) {
-			if (strtolower($found_hashtag->text) == strtolower($hashtag)) {
-				array_push($filteredTweets, $tweet);
-				$i++;
+			if (strtolower($found_hashtag->text) == strtolower($searchTerm)) {
+				$matched = true;
 			}
+		}
+		
+		$mentions = $tweet->entities->user_mentions;
+		foreach($mentions as $mention) {
+			if (strtolower($mention->screen_name) == strtolower($searchTerm)) {
+				$matched = true;
+			}
+		}
+		
+		if ($matched) {
+			array_push($filteredTweets, $tweet);
+			$i++;			
 		}
 	}
 		  	
