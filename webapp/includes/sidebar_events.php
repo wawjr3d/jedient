@@ -1,6 +1,23 @@
           <div class="sidebar">
           
-          <div class="widget">
+            <div class="widget">
+              <h2 class="title"><span>Gallery</span></h2>
+              <div class="recentpost">
+                <ul class="galleryside">
+                <li><a href="#"><img src="images/flickr-img-01.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-02.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-03.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-04.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-05.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-06.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-03.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-02.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="images/flickr-img-05.jpg" alt="" /></a></li>
+              </ul>              
+              </div>
+              </div>          
+		  
+		  <!--<div class="widget">
               <h2 class="title"><span>Recent News</span></h2>
               <div class="recentpost">
                 <ul>
@@ -164,5 +181,5 @@
                   <li>Excepteur sint occaecat cupidatat non proident.</li>
                 </ul>
               </div>
-            </div>
+            </div>-->
           </div>

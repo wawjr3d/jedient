@@ -72,7 +72,9 @@
 		  
 		  <!-- Home Slogan Box - Start here -->
 		  <div id="home-slogan-box">
+
 		  	<a href="http://www.twitter.com" class="twitter">Latest @jedipgh from twitter:</a>
+
 			<div class="home-slogan-box-inner txtalctr">
 			  <h2><?php include "includes/latest-tweets-1.html"; ?></h2>
 			</div>
@@ -84,19 +86,19 @@
 			<div id="wrapper-content">
 					<div id="content">
 						<div class="one_fourth">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon1.png" alt=""  class="alignleft"/>Jealousy.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><span class="dropLetter">J</span>Jealousy.</h1>
 							<span>In life you will experience Jealousy in at least two ways, your jealousy toward others or others jealousy toward you. If you have what they don't keep working because someone is coming for it. If what you want is what they have, keep working and maybe you can get.</span>
 						</div>
 						<div class="one_fourth">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon2.png" alt=""  class="alignleft"/>Encouraged.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><span class="dropLetter">E</span>Encouraged.</h1>
 							<span>Whether you push yourself, or you have the support of others, always have hope in yourself and move forward. Your encouragement starts within and the belief that you are capable of anything.</span>
 						</div>
 						<div class="one_fourth">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon3.png" alt=""  class="alignleft"/>Driven.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><span class="dropLetter">D</span>Driven.</h1>
 							<span>The will to push forward when things are not moving around you is what will make the difference when you are stuck between a rock and a hard place.</span>
 						</div>
 						<div class="one_fourth last">
-							<h1 class="valignmiddle uppercase title-bold"><img src="./images/icons/icon4.png" alt=""  class="alignleft"/>Intelligence.</h1>
+							<h1 class="valignmiddle uppercase title-bold"><span class="dropLetter">I</span>Intelligence.</h1>
 							<span>True power lies in knowledge, knowledge of self and the things around you, gain knowledge to gain power.</span>
 						</div>
 						<div class="clear"></div>
