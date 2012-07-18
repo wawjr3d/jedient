@@ -25,6 +25,10 @@
                 <li><a href="#" target="_blank"><img src="images/splashLogo.png" /></a> Splash Squad Entertainment</li>
                 <li><a href="http://www.vanity-group.com/" target="_blank"><img src="images/vanityLogo.jpg" /></a> Vanity Group</li>
 				<li><a href="http://square1nation.com/" target="_blank"><img src="images/square1Logo.jpg" /></a> Square 1 Nation Internet Radio</li>
+				<li><a href="http://www.barroompittsburgh.com/" target="_blank"><img src="images/barroom.jpg" /></a> Bar Room | Pittsburgh</li>
+				<li><a href="http://www.jamsavenue.com/" target="_blank"><img src="images/jamsavemusic.jpg" /></a> Jams Avenue Music</li>
+				<li><a href="http://www.beachclubpgh.com/" target="_blank"><img src="images/beachclub.jpg" /></a> Beach Club | Pittsburgh</li>
+				<li><a href="#" target="_blank"><img src="images/ilc.jpg" /></a> In Loving Color Photography</li>
               </ul>
             </div>
             <div class="prev"></div>

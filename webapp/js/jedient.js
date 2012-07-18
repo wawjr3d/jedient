@@ -7,7 +7,7 @@ $f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
             url: "media/audio/bridges_of_forgiveness.mp3",
             details: {
                 title: "Bridges of Forgiveness",
-                author: "JediEnt"
+                author: "Klark Kentt"
             }
         }
 
