@@ -11,7 +11,7 @@
             </div>
           </div>
           <div class="footer-widget01">
-            <h3> Blog feedfrom </h3>
+            <h3> Blog Feed </h3>
             <div class="footercontent blogfeed">
               <?php include "latest-blog-entries-5.html"; ?>
             </div>
@@ -23,7 +23,8 @@
                 <li><a href="http://socialstatuspgh.com/site/" target="_blank"><img src="images/ssLogo.png" /></a> Social Status</li>
                 <li><a href="http://www.blogtalkradio.com/keepinit700" target="_blank"><img src="images/ki7rLogo.jpg" /></a> Keepin It 700 Online Radio</li>
                 <li><a href="#" target="_blank"><img src="images/splashLogo.png" /></a> Splash Squad Entertainment</li>
-                <li><a href="#" target="_blank"><img src="images/vanityLogo.jpg" /></a> Vanity Group</li>
+                <li><a href="http://www.vanity-group.com/" target="_blank"><img src="images/vanityLogo.jpg" /></a> Vanity Group</li>
+				<li><a href="http://square1nation.com/" target="_blank"><img src="images/square1Logo.jpg" /></a> Square 1 Nation Internet Radio</li>
               </ul>
             </div>
             <div class="prev"></div>

@@ -38,7 +38,7 @@
     <!-- Content Area - Start Here -->
     <div class="content">
       <div class="midarea">
-        <h2 class="intitle"> <span class="title">Events</span> <span class="title_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</span> </h2>
+        <h2 class="intitle"> <span class="title">Events</span> <span class="title_text"></span> </h2>
         <div id="content" class="middle-inner">
         	<div class="main_container">
         		<div class="clear"></div>
@@ -63,7 +63,7 @@
 							<?php	} ?>
         		</ol>
         	</div>
-        	<?php include "includes/sidebar.php"; ?>
+        	<?php include "includes/sidebar_events.php"; ?>
         </div>
         <div class="clear"></div>
         <div class="clear"></div>

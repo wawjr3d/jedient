@@ -60,7 +60,7 @@ if(isset($_SESSION['sent']))
     <!-- Content Area - Start Here -->
     <div class="content">
       <div class="midarea">
-        <h2 class="intitle"> <span class="title">Contact Us</span> <span class="title_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</span> </h2>
+        <h2 class="intitle"> <span class="title">Contact Us</span> <span class="title_text">We appreciate all your feedback and comments.. If you wish to reach us for booking, promotion, advertising, or questions pleaes respond below.</span> </h2>
         <div class="middle-inner" id="content">
           <div class="main_container">
             <div id="form">
@@ -142,7 +142,7 @@ if(isset($_SESSION['sent']))
             </div>
           </div>
           
-          <?php include_once "includes/sidebar.php"; ?>
+          <?php include_once "includes/sidebar_contact.php"; ?>
         </div>
         <div class="clear"></div>
         <div class="clear"></div>
