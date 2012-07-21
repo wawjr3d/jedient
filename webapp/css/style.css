@@ -250,7 +250,7 @@ blockquote.home {
 	}
 	
 blockquote .quoteb .author {
-	clear:both; text-align:right; padding:10px 10px; color:#5C9701 !important ;
+	clear:both; text-align:right; padding:10px 10px; color:#FFC55E !important ;
 	}
 	
 blockquote cite {
@@ -1321,11 +1321,14 @@ table.jqTransformTextarea tbody tr td {
 	padding-left: 50px;
 }
 .home-slogan-box-inner {
-	background:url(../images/home-slogan-bg.png) no-repeat center top;
+	/*background:url(../images/home-slogan-bg.png) no-repeat center top;*/
+	width: 800px;
+	margin:0 auto;
+	border:1px solid #333;
+	background: none repeat scroll 0 0 #111111;
 	padding:18px 30px;
 	font-size:17px;
 	color:#212121;
-	margin:0 0 20px 0;
 	filter: alpha(opacity=50);
 	opacity: .5;
 }
