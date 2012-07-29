@@ -1,7 +1,6 @@
 <?php 
 	require_once "../config/config.php";
-	
-	
+		
 	$photoDAO = new PhotoDAO();
     $restRequest = RestUtils::processRequest();  
              	  
@@ -9,8 +8,10 @@
 	$requestVars = $restRequest->getRequestVars();
 		
 	function populateFromRequest(&$photo, $data) {
-		$photo->setFile($data->file);
-		$photo->setAlbumId($data->album_id);
+		$photo->setTitle($data->title);
+		$photo->setImage($data->image);
+		$photo->setThumbnail($data->thumbnail);
+		$photo->setEventId($data->event_id);
 		$photo->setIsActive($data->isActive); 	
 	}
 	
@@ -32,7 +33,7 @@
             break;  
             
         case "POST":  
-			$photo = new Album();  
+			$photo = new Photo();  
 
 			populateFromRequest($photo, $data);
 
