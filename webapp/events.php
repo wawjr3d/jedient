@@ -2,7 +2,7 @@
 	require_once "../config/config.php";
 	
 	$eventDAO = new EventDAO();
-	$events = $eventDAO->getAll();
+	$events = $eventDAO->getAllActive();
 
 ?>
 <!DOCTYPE HTML>
