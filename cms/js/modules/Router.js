@@ -2,9 +2,9 @@ define(function(require) {
     "use strict";
     
     var Backbone = require("backbone");
-    var Menu = require("modules/Menu");
-    var HomeView = require("modules/HomeView"); 
-    var MainContentRenderer = require("modules/MainContentRenderer");
+    var Menu = require("modules/app/Menu");
+    var HomeView = require("modules/app/HomeView"); 
+    var MainContentRenderer = require("modules/app/MainContentRenderer");
     var Event = require("modules/event/Event");
     var EventCollection = require("modules/event/EventCollection");
     var EventView = require("modules/event/EventView");
