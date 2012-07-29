@@ -1,8 +1,10 @@
 define(function(require) {
     "use strict";
     
+    var _ = require("underscore");
     var BaseView = require("modules/base/BaseView");
     var EventCollection = require("modules/event/EventCollection");
+    var FileUpload = require("modules/util/FileUpload");
     var photoTemplate = require("text!templates/photo/photo.html");
     var editPhotoTemplate = require("text!templates/photo/edit-photo.html");
     
@@ -39,7 +41,9 @@ define(function(require) {
             for(var i = 0; i < formArray.length; i++) {
                 var field = formArray[i];
                 
-                formObject[field.name] = field.value;
+                if (field.name != "thumbnail" && field.name != "image") {
+                    formObject[field.name] = field.value;   
+                }
             }
             
             if (!formObject["isActive"]) {
@@ -68,10 +72,40 @@ define(function(require) {
             }
         },
         
+        disableSubmit: function() {
+            this.$el.find("input[type=submit]").prop("disabled", true);
+        },
+        
+        enableSubmit: function() {
+            this.$el.find("input[type=submit]").prop("disabled", false);
+        },
+        
         additionalRendering: function() {
             var view = this;
+            var model = this.model;
             
             if (this.shouldShowEdit()) {
+                FileUpload.enable("input[name=thumbnail]", {
+                    url: "../api/upload-photo.php",
+                    formData: {
+                        "isThumbnail": true
+                    },
+                    done: function(data) {
+                        model.set("thumbnail", data.filePath);
+                    },
+                    before: _.bind(this.disableSubmit, this),
+                    always: _.bind(this.enableSubmit, this)
+                });
+                
+                FileUpload.enable("input[name=image]", {
+                    url: "../api/upload-photo.php",
+                    done: function(data) {
+                        model.set("image", data.filePath);
+                    },
+                    before: _.bind(this.disableSubmit, this),
+                    always: _.bind(this.enableSubmit, this)
+                });
+                
                 new EventCollection().fetch({
                     success: function(collection) {
                         var $select = $("<select name='eventId'/>");
