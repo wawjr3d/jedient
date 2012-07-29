@@ -11,6 +11,10 @@
 			return $this->getByQuery(static::SELECT_ALL_FROM . static::TABLE_NAME, $howmany, $offset);
 		}
 			
+		public function getAllActive($howmany = 0, $offset = 0) {
+			return $this->getByQuery(static::SELECT_ALL_FROM . static::TABLE_NAME . " WHERE is_active=1", $howmany, $offset);
+		}
+			
 		public function getById($id = 0) {
 			$items = $this->getByQuery(static::SELECT_ALL_FROM . static::TABLE_NAME . " WHERE id=$id", 1);
 
@@ -119,7 +123,7 @@
 
 						if ($result === false) { throw new MySQLDatabaseConnectionException('Could not update: ' . mysql_error()); }
 					} catch(MySQLDatabaseConnectionException $mysqle) {
-
+						
 					}
 				}
 
