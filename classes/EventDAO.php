@@ -34,7 +34,7 @@
 				 . "'" . addslashes($item->getAddress()) . "', "
 				 . "'" . addslashes($item->getMapLink()) . "', "
 				 . "'" . addslashes($item->getAdditionalDetails()) . "', "
-				 . $item->isActive() . ")";
+				 . intval($item->isActive()) . ")";
 		}
 		
 		protected function getUpdateValues($item) {
@@ -43,6 +43,6 @@
 				 . "address='" . addslashes($item->getAddress()) . "', "
 				 . "map_link='" . addslashes($item->getMapLink()) . "', "
 				 . "additional_details='" . addslashes($item->getAdditionalDetails()) . "', "
-				 . "is_active=" . $item->isActive();
+				 . "is_active=" . intval($item->isActive());
 		}
 	}

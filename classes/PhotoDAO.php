@@ -40,7 +40,7 @@
 				 . "'" . addslashes($item->getImage()) . "', "
 				 . "'" . addslashes($item->getThumbnail()) . "', "
 				 . $item->getEventId() . ", "
-				 . $item->isActive() . ")";
+				 . intval($item->isActive()) . ")";
 		}
 		
 		protected function getUpdateValues($item) {
@@ -48,6 +48,6 @@
 				 . "image='" . addslashes($item->getImage()) . "', "
 				 . "thumbnail='" . addslashes($item->getThumbnail()) . "', "
 				 . "event_id=" . $item->getEventId() . ", "
-				 . "is_active=" . $item->isActive();
+				 . "is_active=" . intval($item->isActive());
 		}
 	}
