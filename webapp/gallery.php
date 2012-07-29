@@ -2,7 +2,7 @@
 	require_once "../config/config.php";
 	
 	$photoDAO = new PhotoDAO();
-	$photos = $photoDAO->getAllActive();
+	$photos = $photoDAO->getActiveByActiveEvents();
 	
 	$eventIds = array();
 	

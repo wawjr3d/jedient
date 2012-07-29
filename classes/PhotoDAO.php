@@ -30,6 +30,13 @@
 		public function getByEventId($eventId) {
 			return $this->getByQuery(self::SELECT_ALL_FROM . self::TABLE_NAME . " WHERE event_id=$eventId ORDER BY id DESC");
 		}
+		
+		public function getActiveByActiveEvents() {
+			return $this->getByQuery("SELECT p.id, p.title, p.image, p.thumbnail, p.event_id, p.is_active, p.updated_time FROM "
+								. self::TABLE_NAME . " p "
+								. "INNER JOIN `event` e ON (p.event_id = e.id) "
+								. "WHERE e.is_active=1 AND p.is_active=1");
+		}
 
 		public function deleteByEventId($eventId) {
 			return $this->getByQuery("UPDATE " . self::TABLE_NAME . " SET is_active=0 WHERE event_id=$eventId");

@@ -1,0 +1,19 @@
+<form>
+  {{#errors}}
+    {{.}}
+  {{/errors}}
+
+  <h2>Photo</h2>
+  <label>Title</label> <input type="text" name="title" value="{{title}}">
+  <label>Thumbnail</label> {{thumbnail}} <input type="file" name="thumbnail">
+  <label>Image</label> {{image}} <input type="file" name="image" value="{{image}}">
+  <label>Event Id</label> <input type="text" name="eventId" value="{{eventId}}">
+  <label>
+    Active <input type="checkbox" name="isActive" {{#isActive}}checked="checked"{{/isActive}}>
+  </label> 
+  
+  <div class="actions">
+    <input type="submit" value="Submit" class="btn btn-success">
+    <span class="cancel btn">Cancel</span>
+  </div>
+</form>

@@ -9,18 +9,21 @@ define(function(require) {
         
         pickTemplate: $.noop,
         
-        renderChildViews: $.noop,
+        extra: $.noop,
+        
+        additionalRendering: $.noop,
         
         render: function() {
             this.pickTemplate();
             
             var model = {};
             if (this.model) { model = this.model.toJSON(); }
+            model = $.extend(model, this.extra());
             
             var html = Mustache.render(this.template, model);
             this.$el.html(html);
             
-            this.renderChildViews();
+            this.additionalRendering();
             
             return this;
         }

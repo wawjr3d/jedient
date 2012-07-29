@@ -11,7 +11,7 @@
 		$photo->setTitle($data->title);
 		$photo->setImage($data->image);
 		$photo->setThumbnail($data->thumbnail);
-		$photo->setEventId($data->event_id);
+		$photo->setEventId($data->eventId);
 		$photo->setIsActive($data->isActive); 	
 	}
 	

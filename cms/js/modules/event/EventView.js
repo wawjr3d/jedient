@@ -64,7 +64,7 @@ define(function(require) {
             }
         },
         
-        renderChildViews: function() {
+        additionalRendering: function() {
             var view = this;
             
             this.model.fetchPhotos({
