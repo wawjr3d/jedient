@@ -110,9 +110,10 @@ define(function(require) {
                     success: function(collection) {
                         var $select = $("<select name='eventId'/>");
                         for(var i = 0; i < collection.models.length; i++) {
-                            var model = collection.models[i];
-                            
-                            $select.append("<option value='" + model.id + "'>" + model.get("venue") + "</option>");
+                            var event = collection.models[i];
+                            var $option = $("<option value='" + event.id + "'>" + event.get("venue") + "</option>")
+                                            .prop("selected", model.get("eventId") == event.id);
+                            $select.append($option);
                         }
                         
                         view.$el.find("input[name=eventId]").replaceWith($select);
