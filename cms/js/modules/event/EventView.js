@@ -2,6 +2,7 @@ define(function(require) {
     "use strict";
     
     var BaseView = require("modules/base/BaseView");
+    var PhotoListView = require("modules/photo/PhotoListView");
     var eventTemplate = require("text!templates/event/event.html");
     var editEventTemplate = require("text!templates/event/edit-event.html");
     
@@ -61,6 +62,16 @@ define(function(require) {
             } else {
                 this.template = eventTemplate;
             }
+        },
+        
+        renderChildViews: function() {
+            var view = this;
+            
+            this.model.fetchPhotos({
+                success: function(eventPhotoCollection) {
+                    view.$el.append(new PhotoListView({ model: eventPhotoCollection }).render().el);
+                }
+            });
         }
     });
     

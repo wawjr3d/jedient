@@ -2,6 +2,14 @@ body {
     padding-top: 60px;	
 }
 
+.event section {
+    margin: 1em;	
+}
+
+.event section h3 {
+    font-size: 1em;    
+}
+
 .inactive:after {
     content: " (inactive) ";
     color: #CCC;    

@@ -23,8 +23,10 @@
             
         	if (isset($requestVars["id"])) {
         		$id = $requestVars["id"];
-        		
             	$photos = $photoDAO->getById($id);
+        	} else if (isset($requestVars["eventId"])) {
+        		$eventId = $requestVars["eventId"];
+            	$photos = $photoDAO->getByEventId($eventId);
         	} else {
         		$photos = $photoDAO->getAll();
         	}

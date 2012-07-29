@@ -27,12 +27,12 @@
 			return false;
 		}
 			
-		public function getByEventId($event_id) {
-			return $this->getByQuery(self::SELECT_ALL_FROM . self::TABLE_NAME . " WHERE event_id=$event_id ORDER BY id DESC");
+		public function getByEventId($eventId) {
+			return $this->getByQuery(self::SELECT_ALL_FROM . self::TABLE_NAME . " WHERE event_id=$eventId ORDER BY id DESC");
 		}
 
-		public function deleteByEventId($event_id) {
-			return $this->getByQuery("UPDATE " . self::TABLE_NAME . " SET is_active=0 WHERE event_id=$event_id");
+		public function deleteByEventId($eventId) {
+			return $this->getByQuery("UPDATE " . self::TABLE_NAME . " SET is_active=0 WHERE event_id=$eventId");
 		}
 			
 		protected function getInsertValues($item) {

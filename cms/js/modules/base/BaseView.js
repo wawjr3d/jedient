@@ -9,6 +9,8 @@ define(function(require) {
         
         pickTemplate: $.noop,
         
+        renderChildViews: $.noop,
+        
         render: function() {
             this.pickTemplate();
             
@@ -17,6 +19,8 @@ define(function(require) {
             
             var html = Mustache.render(this.template, model);
             this.$el.html(html);
+            
+            this.renderChildViews();
             
             return this;
         }
