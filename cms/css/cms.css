@@ -1,0 +1,8 @@
+body {
+    padding-top: 60px;	
+}
+
+.inactive:after {
+    content: " (inactive) ";
+    color: #CCC;    
+}

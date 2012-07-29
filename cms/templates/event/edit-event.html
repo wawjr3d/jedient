@@ -1,0 +1,20 @@
+<form>
+  {{#errors}}
+    {{.}}
+  {{/errors}}
+
+  <h2>Event</h2>
+  <label>Date</label> <input type="datetime" name="date" value="{{date}}">
+  <label>Venue</label> <input type="text" name="venue" value="{{venue}}">
+  <label>Address</label> <input type="text" name="address" value="{{address}}">
+  <label>Map Link</label> <input type="url" name="mapLink" value="{{mapLink}}">
+  <label>Additional Details</label> <textarea name="additionalDetails">{{additionalDetails}}</textarea>
+  <label>
+    Active <input type="checkbox" name="isActive" {{#isActive}}checked="checked"{{/isActive}}>
+  </label> 
+  
+  <div class="actions">
+    <input type="submit" value="Submit" class="btn btn-success">
+    <span class="cancel btn">Cancel</span>
+  </div>
+</form>
