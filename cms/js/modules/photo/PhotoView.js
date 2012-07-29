@@ -85,7 +85,7 @@ define(function(require) {
             var model = this.model;
             
             if (this.shouldShowEdit()) {
-                FileUpload.enable("input[name=thumbnail]", {
+                FileUpload.enable(this.$el.find("input[name=thumbnail]"), {
                     url: "../api/upload-photo.php",
                     formData: {
                         "isThumbnail": true
@@ -97,7 +97,7 @@ define(function(require) {
                     always: _.bind(this.enableSubmit, this)
                 });
                 
-                FileUpload.enable("input[name=image]", {
+                FileUpload.enable(this.$el.find("input[name=image]"), {
                     url: "../api/upload-photo.php",
                     done: function(data) {
                         model.set("image", data.filePath);

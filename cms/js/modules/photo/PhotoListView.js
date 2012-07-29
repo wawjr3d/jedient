@@ -8,7 +8,15 @@ define(function(require) {
     var PhotoListView = BaseView.extend(_.extend({}, ListView, {
         listTitle: "Photos",
         listClassName: "photos",
-        ItemView: PhotoItemView 
+        ItemView: PhotoItemView,
+     
+        events: {
+            "click .add.btn": "addPhoto"
+        },
+        
+        addPhoto: function() {
+            document.location.href = "#photo";
+        }
     }));
     
     return PhotoListView;

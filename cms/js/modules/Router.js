@@ -23,6 +23,7 @@ define(function(require) {
             "event": "event",
             "event/:id": "event",
             "photos": "photos",
+            "photo": "photo",
             "photo/:id": "photo"
         },
         
@@ -69,13 +70,19 @@ define(function(require) {
         },
         
         photo: function(id) {
+            var photo;
             Menu.setActive("photos");
-            var photo = new Photo({ id: id });
-            photo.fetch({
-                success: function(model) {
-                    MainContentRenderer.render(new PhotoView({ model: model }));
-                }
-            });  
+            
+            if (id) {
+                photo = new Photo({ id: id });
+                photo.fetch({
+                    success: function(model) {
+                        MainContentRenderer.render(new PhotoView({ model: model }));
+                    }
+                });               
+            } else {
+                MainContentRenderer.render(new PhotoView({ model: new Photo() }));
+            }
         },
     });
     
