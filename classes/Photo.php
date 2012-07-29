@@ -17,4 +17,6 @@
 		public function setImage($value) { $this->image = $value; }
 		public function setThumbnail($value) { $this->thumbnail = $value; }
 		public function setEventId($value) { $this->eventId = $value; }
+		
+		public function toJSON() { return json_encode(get_object_vars($this)); }
 	}
