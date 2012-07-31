@@ -10,12 +10,11 @@
 		RestUtils::sendResponse(400);
 	} else {
 		$filename = isset($requestVars["filename"]) ? $requestVars["filename"] : false;
-		$imageDir = isset($requestVars["isThumbnail"]) && $requestVars["isThumbnail"] ? "images" : "images/bigimages";
+		$photosDir = isset($requestVars["isThumbnail"]) && $requestVars["isThumbnail"] ? "photos/thumbnails" : "photos";
 		$webappDir = dirname(__FILE__) . "/../webapp";
-		$relativeFileLocation = "$imageDir/$filename";
+		$relativeFileLocation = "images/$photosDir/$filename";
 		
-	    if ($filename) {  
-	        // AJAX call  
+	    if ($filename) {
 	        move_uploaded_file($_FILES[$requestVars["filekey"]]["tmp_name"], "$webappDir/$relativeFileLocation");
 
 	        class FileResponse {
