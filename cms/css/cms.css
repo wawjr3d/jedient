@@ -14,3 +14,52 @@ body {
     content: " (inactive) ";
     color: #CCC;    
 }
+
+.thumbnail.not-image {
+	line-height: inherit;
+	padding: 0;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;	
+}
+
+[data-preview-image] {
+    position: relative;	
+}
+
+[data-preview-image] .thumbnail {
+    display: none;
+    position: absolute;
+    top: -60px;
+    left: 200px;
+    background: #FFFFFF;
+}
+
+[data-preview-image]:hover .thumbnail {
+    display: block;
+}
+
+[data-preview-image] .thumbnail:after, [data-preview-image] .thumbnail:before {
+	position: absolute; 
+    content: " ";
+	right: 100%;
+	width: 0; 
+	height: 0;
+	border: solid transparent;
+	pointer-events: none;
+}
+
+[data-preview-image] .thumbnail:after {
+	border-right-color: #FFFFFF;
+	border-width: 10px;
+	top: 70px;
+	margin-top: -10px;
+}
+
+[data-preview-image] .thumbnail:before {
+	border-right-color: #dddddd;
+	border-width: 11px;
+	top: 70px;
+	margin-top: -11px;
+}

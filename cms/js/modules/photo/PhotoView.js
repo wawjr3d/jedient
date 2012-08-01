@@ -8,6 +8,10 @@ define(function(require) {
     var photoTemplate = require("text!templates/photo/photo.html");
     var editPhotoTemplate = require("text!templates/photo/edit-photo.html");
     
+    var NOT_ASSOCIATED_WITH_AN_EVENT = "Not Associated with event";
+    var WEBAPP_DIR = "../webapp";
+    var PREVIEW_IDENTIFIER = "data-preview-image";
+    
     var PhotoView = BaseView.extend({
         tagName: "article",
         className: "photo",
@@ -80,9 +84,20 @@ define(function(require) {
             this.$el.find("input[type=submit]").prop("disabled", false);
         },
         
+        extra: function() {
+            return {
+                "hasEvent": this.model.hasEvent()
+            }
+        },
+        
         additionalRendering: function() {
             var view = this;
             var model = this.model;
+            
+            this.$el.find("[" + PREVIEW_IDENTIFIER + "]").each(function(i, n) {
+                var $previewAble = $(n);
+                $previewAble.append("<div class='thumbnail'><img src='" + WEBAPP_DIR + "/" + $previewAble.attr(PREVIEW_IDENTIFIER) + "'/></div>")
+            });
             
             if (this.shouldShowEdit()) {
                 FileUpload.enable(this.$el.find("input[name=thumbnail]"), {
@@ -109,6 +124,7 @@ define(function(require) {
                 new EventCollection().fetch({
                     success: function(collection) {
                         var $select = $("<select name='eventId'/>");
+                        $select.append("<option value='0'>" + NOT_ASSOCIATED_WITH_AN_EVENT + "</option>");
                         for(var i = 0; i < collection.models.length; i++) {
                             var event = collection.models[i];
                             var $option = $("<option value='" + event.id + "'>" + event.get("venue") + "</option>")
