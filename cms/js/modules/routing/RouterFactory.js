@@ -6,12 +6,20 @@ define(function(require) {
     var Menu = require("modules/app/Menu");
     var MainContentRenderer = require("modules/app/MainContentRenderer");
     
-    function augmentHandler(handler, activeMenu) {
-        var expectingViewPromise = handler;
+    function makeHandlerThatSetsActiveMenu(handler, activeMenu) {
+        var oldHandler = handler;
         
         return function() {
             Menu.setActive(activeMenu);
             
+            return oldHandler.apply(this, arguments);
+        }
+    }
+    
+    function makeHandlerThatRendersExpectedView(handler) {
+        var expectingViewPromise = handler;
+        
+        return function() {
             return $.when(expectingViewPromise.apply(this, arguments))
                 .always(function(view) {
                     MainContentRenderer.render(view);
@@ -25,7 +33,9 @@ define(function(require) {
             for (var route in props.routes) {
                 if (props.routes.hasOwnProperty(route)) {
                     var handler = props[props.routes[route]];
-                    props[props.routes[route]] = augmentHandler(handler, props.activeMenu);
+                    handler = makeHandlerThatSetsActiveMenu(handler, props.activeMenu);
+                    handler = makeHandlerThatRendersExpectedView(handler);
+                    props[props.routes[route]] = handler;
                 }
             }
             
