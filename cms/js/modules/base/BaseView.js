@@ -4,6 +4,7 @@ define(function(require) {
     var $ = require("jquery");
     var Backbone = require("backbone");
     var Mustache = require("mustache");
+    var Behaviors = require("modules/util/Behaviors");
     
     var BaseView = Backbone.View.extend($.extend({}, {
         
@@ -24,6 +25,8 @@ define(function(require) {
             this.$el.html(html);
             
             this.additionalRendering();
+            
+            Behaviors.apply(this.$el);
             
             return this;
         }
