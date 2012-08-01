@@ -34,6 +34,7 @@ body {
     top: -60px;
     left: 200px;
     background: #FFFFFF;
+    z-index: 10;
 }
 
 [data-preview-image]:hover .thumbnail {
