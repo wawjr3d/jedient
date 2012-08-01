@@ -6,6 +6,8 @@ define(function(require) {
     
     var Application = {
         init: function() {
+            $.ajaxSetup({ cache: false });
+            
             Backbone.history.start();
         }
     };
