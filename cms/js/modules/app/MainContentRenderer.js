@@ -10,7 +10,7 @@ define(function(require) {
             if (!view) {
                 return;
             }
-            
+
             currentView = view;
             
             $("#content").html(currentView.render().el);

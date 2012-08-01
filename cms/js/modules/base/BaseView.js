@@ -23,9 +23,8 @@ define(function(require) {
             
             var html = Mustache.render(this.template, model);
             this.$el.html(html);
-            
-            this.additionalRendering();
-            
+
+            this.additionalRendering();           
             Behaviors.apply(this.$el);
             
             return this;

@@ -56,8 +56,12 @@ define(function(require) {
             });
         },
         
+        shouldShowEdit: function() {
+            return this.model.isNew() || this.inEditMode;
+        },
+        
         pickTemplate: function() {
-            if (this.model.isNew() || this.inEditMode) {
+            if (this.shouldShowEdit()) {
                 this.template = editEventTemplate;
             } else {
                 this.template = eventTemplate;
@@ -67,11 +71,13 @@ define(function(require) {
         additionalRendering: function() {
             var view = this;
             
-            this.model.fetchPhotos({
-                success: function(eventPhotoCollection) {
-                    view.$el.append(new PhotoListView({ model: eventPhotoCollection }).render().el);
-                }
-            });
+            if (!this.shouldShowEdit()) {
+                this.model.fetchPhotos({
+                    success: function(eventPhotoCollection) {
+                        view.$el.append(new PhotoListView({ model: eventPhotoCollection }).render().el);
+                    }
+                });
+            }
         }
     });
     

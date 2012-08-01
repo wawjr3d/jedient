@@ -9,10 +9,15 @@ define(function(require) {
         photos: null,
         
         initialize: function() {
-            this.photos = new EventPhotoCollection([], { eventId: this.id });
+            this.initializePhotos();
+            this.bind("change:id", this.initializePhotos, this);
         },
         
         urlRoot: "../api/event.php",
+        
+        initializePhotos: function() {
+            this.photos = new EventPhotoCollection([], { eventId: this.id });
+        },
         
         fetchPhotos: function(options) {
             return this.photos.fetch(options);
