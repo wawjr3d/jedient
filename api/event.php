@@ -2,8 +2,9 @@
 	require_once "../config/config.php";
 	
 	$eventDAO = new EventDAO();
+	
     $restRequest = RestUtils::processRequest();  
-             	  
+
 	$data = $restRequest->getData();
 	$requestVars = $restRequest->getRequestVars();
 		
@@ -13,7 +14,7 @@
 		$event->setAddress($data->address);
 		$event->setMapLink($data->mapLink);
 		$event->setAdditionalDetails($data->additionalDetails);
-		$event->setIsActive($data->isActive);		
+		$event->setIsActive(isset($data->isActive) ? $data->isActive : false);		
 	}
 	
     switch($restRequest->getMethod()) {
@@ -30,7 +31,12 @@
         		$events = $eventDAO->getAll();
         	}
 
-        	RestUtils::sendResponse(200, JSONUtils::serialize($events), 'application/json');
+			if ($events) {
+        		RestUtils::sendJSONResponse(200, $events);				
+			} else {
+				RestUtils::sendJSONResponse(404, new Exception("Could not find the requested resource"));
+			}
+
             break;  
             
         case "POST":  
@@ -39,25 +45,27 @@
 			populateFromRequest($event, $data); 
 
 			if ($eventDAO->save($event)) {
-				RestUtils::sendResponse(200, JSONUtils::serialize($event), 'application/json');
+				RestUtils::sendJSONResponse(200, $event);
 			} else {
-				RestUtils::sendResponse(500);
+				RestUtils::sendJSONResponse(500, new Exception("There was a problem creating the event"));
 			}
 			
             break;
               
         case "PUT":
 
-        	if (!$data->id || $data->id <= 0) { RestUtils::sendResponse(400); }
+        	if (!$data->id || $data->id <= 0) {
+        		RestUtils::sendJSONResponse(400, new Exception("An id is required to update an event"));
+			}
         	
 			$event = $eventDAO->getById($data->id);
 			  
 			populateFromRequest($event, $data);
 
 			if ($eventDAO->save($event)) {
-				RestUtils::sendResponse(200, JSONUtils::serialize($event), 'application/json');
+				RestUtils::sendJSONResponse(200, $event);
 			} else {
-				RestUtils::sendResponse(500);
+				RestUtils::sendJSONResponse(500, new Exception("There was a problem updating the event"));
 			}
 			
         	break;

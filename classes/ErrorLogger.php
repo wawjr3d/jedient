@@ -16,7 +16,7 @@
 			return self::instance;
 		}
 
-		public function logError(error) {
+		public function logError($error) {
 
 		}
 

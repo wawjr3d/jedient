@@ -2,6 +2,7 @@
 	require_once "../config/config.php";
 		
 	$photoDAO = new PhotoDAO();
+	
     $restRequest = RestUtils::processRequest();  
              	  
 	$data = $restRequest->getData();
@@ -12,7 +13,7 @@
 		$photo->setImage($data->image);
 		$photo->setThumbnail($data->thumbnail);
 		$photo->setEventId($data->eventId);
-		$photo->setIsActive($data->isActive); 	
+		$photo->setIsActive(isset($data->isActive) ? $data->isActive : false); 	
 	}
 	
     switch($restRequest->getMethod()) {
@@ -31,7 +32,12 @@
         		$photos = $photoDAO->getAll();
         	}
 
-        	RestUtils::sendResponse(200, JSONUtils::serialize($photos), 'application/json');
+			if ($photos) {
+				RestUtils::sendJSONResponse(200, $photos);	
+			} else {
+				RestUtils::sendJSONResponse(404, new Exception("Could not find the requested resource"));
+			}
+        	
             break;  
             
         case "POST":  
@@ -40,25 +46,27 @@
 			populateFromRequest($photo, $data);
 
 			if ($photoDAO->save($photo)) {
-				RestUtils::sendResponse(200, JSONUtils::serialize($photo), 'application/json');
+				RestUtils::sendJSONResponse(200, $photo);
 			} else {
-				RestUtils::sendResponse(500);
+				RestUtils::sendJSONResponse(500, new Exception("There was a problem creating the photo"));
 			}
 			
             break;
               
         case "PUT":
 
-        	if (!$data->id || $data->id <= 0) { RestUtils::sendResponse(400); }
+        	if (!$data->id || $data->id <= 0) {
+        		RestUtils::sendJSONResponse(400, new Exception("An id is required to update a photo")); 
+        	}
         	
 			$photo = $photoDAO->getById($data->id);
 			  
 			populateFromRequest($photo, $data);
 
 			if ($photoDAO->save($photo)) {
-				RestUtils::sendResponse(200, JSONUtils::serialize($photo), 'application/json');
+				RestUtils::sendJSONResponse(200, $photo);
 			} else {
-				RestUtils::sendResponse(500);
+				RestUtils::sendJSONResponse(500, new Exception("There was a problem updating the photo"));
 			}
 			
         	break;

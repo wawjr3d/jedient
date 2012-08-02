@@ -1,4 +1,5 @@
 <?php 
+	require_once dirname(__FILE__) . "/JSONUtils.php";
 
 	class RestUtils {  
 	    
@@ -62,7 +63,7 @@
 	        header('Content-type: ' . $content_type);  
 	      
 	        // pages with body are easy  
-	        if($body != '')  
+	        if($content_type != "text/html" || $body != '')  
 	        {  
 	            // send the body  
 	            echo $body;  
@@ -114,6 +115,11 @@
 	            echo $body;  
 	            exit;  
 	        }  
+	    }
+	    
+	    public static function sendJSONResponse($status = 200, $object) {
+	    	$jsonUtils = new JSONUtils();
+	    	RestUtils::sendResponse($status, $jsonUtils->serialize($object), "application/json");
 	    }    
 	  
 	    public static function getStatusCodeMessage($status) {  

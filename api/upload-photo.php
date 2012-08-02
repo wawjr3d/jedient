@@ -7,7 +7,7 @@
 	$requestVars = $restRequest->getRequestVars(); 
 	
 	if ($restRequest->getMethod() != "POST") {
-		RestUtils::sendResponse(400);
+		RestUtils::sendResponse(400, new Exception("Only POSTs are accepted for uploading a photo"));
 	} else {
 		$filename = isset($requestVars["filename"]) ? $requestVars["filename"] : false;
 		$photosDir = isset($requestVars["isThumbnail"]) && $requestVars["isThumbnail"] ? "photos/thumbnails" : "photos";
@@ -16,17 +16,11 @@
 		
 	    if ($filename) {
 	        move_uploaded_file($_FILES[$requestVars["filekey"]]["tmp_name"], "$webappDir/$relativeFileLocation");
-
-	        class FileResponse {
-	        	public $filePath;
-	        	public function toJSON() { return json_encode(get_object_vars($this)); }	
-	        }
 	        
-	        $fileResponse = new FileResponse();
-	        $fileResponse->filePath = $relativeFileLocation;
+	        $fileResponse = new FileResponse($relativeFileLocation);
 	        
-	        RestUtils::sendResponse(200, JSONUtils::serialize($fileResponse), 'application/json');
+	        RestUtils::sendJSONResponse(200, $fileResponse);
 	    } else {
-	    	RestUtils::sendResponse(400);	
+	    	RestUtils::sendJSONResponse(400, new Exception("You must submit a filename for the file you're trying to upload"));	
 	    }  
 	}
