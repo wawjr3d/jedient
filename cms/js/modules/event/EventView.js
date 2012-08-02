@@ -74,7 +74,10 @@ define(function(require) {
             if (!this.shouldShowEdit()) {
                 this.model.fetchPhotos({
                     success: function(eventPhotoCollection) {
-                        view.$el.append(new PhotoListView({ model: eventPhotoCollection }).render().el);
+                        view.$el.append(new PhotoListView({
+                            model: eventPhotoCollection, 
+                            eventId: view.model.id 
+                        }).render().el);
                     }
                 });
             }

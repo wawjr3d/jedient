@@ -15,7 +15,12 @@ define(function(require) {
         },
         
         addPhoto: function() {
-            document.location.href = "#photo";
+            var eventId = this.options.eventId;
+            if (eventId) {
+                document.location.href = "#event/photo/" + eventId;
+            } else {
+                document.location.href = "#photo";   
+            }
         }
     }));
     

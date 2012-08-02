@@ -14,6 +14,7 @@ define(function(require) {
         routes: {
             "photos": "photos",
             "photo": "addPhoto",
+            "event/photo/:eventId": "addPhotoToEvent",
             "photo/:id": "photo"
         },
 
@@ -35,6 +36,12 @@ define(function(require) {
         
         addPhoto: function() {
             return new PhotoView({ model: new Photo() });            
+        },
+        
+        addPhotoToEvent: function(eventId) {
+            var photo = new Photo();
+            photo.set("eventId", eventId);
+            return new PhotoView({ model: photo });            
         }
     });
         
