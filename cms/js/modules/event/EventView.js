@@ -27,7 +27,12 @@ define(function(require) {
         
         handleCancel: function() {
             this.inEditMode = false;
-            this.render();  
+
+            if (this.model.isNew()) {
+                history.back();
+            } else {
+                this.render();
+            }
         },
         
         handleEditSubmit: function(e) {
