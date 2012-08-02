@@ -1,4 +1,5 @@
 <?php
+	require_once dirname(__FILE__) . "/SerializableAsJSON.php";
 
 	abstract class BaseItem extends SerializableAsJSON {
 
