@@ -15,18 +15,22 @@ define(function(require) {
         },
         
         handleGeneratePlaylist: function() {
+            var $generationStatus = this.$el.find(".generation-status");
+            
+            $generationStatus.html("Generating...");
             $.post("../api/audio.php", { "action": "generatePlaylist" }, "json")
                 .done(function() {
-                    // show what we wrote
-                    console.log("success");
+                    $generationStatus.html("<a href='../webapp/includes/audio.json'>Generation complete</a>");
                 })
                 .fail(function() {
-                    console.error("failure");
+                    $generationStatus.html("There was a problem generating the playlist");
                 });
         },
         
         additionalRendering: function() {
             this.$el.append(new AudioListView({ model: this.model }).render().el);
+            this.$el.find(".generate-playlist").after("<span class='generation-status'/>");
+            
         }
         
     });

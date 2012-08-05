@@ -64,3 +64,8 @@ body {
 	top: 70px;
 	margin-top: -11px;
 }
+
+.generation-status {
+	color: #BADA55;
+    margin: 0 1em;
+}
