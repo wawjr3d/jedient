@@ -1,61 +1,63 @@
-$f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
- 
-    // playlist with five entries
-    playlist: [
-
-        {
-            url: "media/audio/bridges_of_forgiveness.mp3",
-            details: {
-                title: "Bridges of Forgiveness",
-                author: "Klark Kentt"
-            }
-        }
-
-    ],
- 
-    // show playlist buttons in controlbar
-    plugins:  {
-        audio: {
-            url: 'thirdparty/flowplayer/plugins/flowplayer.audio-3.2.8.swf'
-        },
-        controls: null
-    },
+(function(global) {
+    "use strict";
     
-    onStart: function(playingClip) {
-        var currentPlayingDisplay = ["\"" + playingClip.details.title + "\"",
-                                     "by",
-                                     playingClip.details.author].join(" ");
+    function setupMusicPlayer(audioPlayList) {
+        $f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
+            
+            playlist: audioPlayList,
+         
+            // show playlist buttons in controlbar
+            plugins:  {
+                audio: {
+                    url: 'thirdparty/flowplayer/plugins/flowplayer.audio-3.2.8.swf'
+                },
+                controls: null
+            },
+            
+            onStart: function(playingClip) {
+                var currentPlayingDisplay = ["\"" + playingClip.details.title + "\"",
+                                             "by",
+                                             playingClip.details.author].join(" ");
+                
+                $(".controls em").html(currentPlayingDisplay);
+            }
+        })
+        .controls("music-player-controls")
+        .controls("top-music-player-controls");
         
-        $(".controls em").html(currentPlayingDisplay);
+        
+        // setup scrolling audio title effect
+        $(".controls .track")
+            .mouseover(function() {
+                var $track = $(this);
+                var $currentClip = $track.find("em");
+                var trackWidth = $track[0].offsetWidth;
+                var offsetWidth = $currentClip[0].offsetWidth;
+                var widthToVisible = Math.max(offsetWidth - trackWidth, 0); 
+                
+                $currentClip.animate({ left: -widthToVisible }, widthToVisible * 15);
+            })
+            .mouseout(function() {
+                var $currentClip = $(this).find("em");
+                $currentClip.stop().css({ left: 0 });
+            })
+            .prepend("<em/>");
     }
-})
-.controls("music-player-controls")
-.controls("top-music-player-controls");
+    
+    $.ajax({
+        url: "includes/audio.json",
+        type: "GET",
+        dataType: "json",
+        success: setupMusicPlayer
+    });
 
-$(".controls .track")
- .mouseover(function() {
-     var $track = $(this);
-     var $currentClip = $track.find("em");
-     var trackWidth = $track[0].offsetWidth;
-     var offsetWidth = $currentClip[0].offsetWidth;
-     var widthToVisible = Math.max(offsetWidth - trackWidth, 0); 
-     
-     $currentClip.animate({ left: -widthToVisible }, widthToVisible * 15);
- })
- .mouseout(function() {
-     var $currentClip = $(this).find("em");
-     $currentClip.stop().css({ left: 0 });
- })
- .prepend("<em/>");
-
-
-(function() {
-    //The auto-scrolling function
+    
+    // auto-scrolling ads in the footer
     $("#footer .affiliates .footercontent").carousel("#footer .affiliates .prev", "#footer .affiliates .next");
     
     function slide(){
         $("#footer .affiliates .next").click();
     }
     //Launch the scroll every 2 seconds
-    var intervalId = window.setInterval(slide, 5000);
-})();
+    var intervalId = window.setInterval(slide, 5000);   
+})(this);
