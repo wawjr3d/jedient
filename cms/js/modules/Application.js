@@ -3,8 +3,9 @@ define(function(require) {
     
     var Backbone = require("backbone");
     var Router = require("modules/routing/Router");
-    var PhotoRouter = require("modules/routing/PhotoRouter");
-    var EventRouter = require("modules/routing/EventRouter");
+    var PhotoRouter = require("modules/photo/PhotoRouter");
+    var EventRouter = require("modules/event/EventRouter");
+    var AudioRouter = require("modules/audio/AudioRouter");
     
     var Application = {
         init: function() {

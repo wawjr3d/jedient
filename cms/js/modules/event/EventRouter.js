@@ -8,7 +8,7 @@ define(function(require) {
     var EventListView = require("modules/event/EventListView"); 
     
     var EventRouter = RouterFactory.create({
-        activeMenu: "events",
+        activeMenu: "event",
         
         routes: {
             "events": "events",

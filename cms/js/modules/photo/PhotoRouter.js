@@ -9,7 +9,7 @@ define(function(require) {
     var PhotoListView = require("modules/photo/PhotoListView");   
     
     var PhotoRouter = RouterFactory.create({
-        activeMenu: "photos",
+        activeMenu: "photo",
         
         routes: {
             "photos": "photos",

@@ -1,0 +1,18 @@
+<form>
+  {{#errors}}
+    {{.}}
+  {{/errors}}
+
+  <h2>Audio</h2>
+  <label>File</label> {{file}} <input type="file" name="file">
+  <label>Title</label> <input type="text" name="title" value="{{title}}">
+  <label>Author</label> <input type="text" name="author" value="{{author}}">
+  <label>
+    Active <input type="checkbox" name="isActive" {{#isActive}}checked="checked"{{/isActive}}>
+  </label> 
+  
+  <div class="actions">
+    <input type="submit" value="Submit" class="btn btn-success">
+    <span class="cancel btn">Cancel</span>
+  </div>
+</form>

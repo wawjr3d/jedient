@@ -6,11 +6,7 @@ define(function(require) {
     
     var EventCollection = Backbone.Collection.extend({
         model: Event,
-        url: "../api/event.php",
-        
-        getByEventId: function(eventId) {
-            
-        }
+        url: "../api/event.php"
     });
     
     return EventCollection;
