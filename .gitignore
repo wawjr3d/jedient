@@ -3,4 +3,5 @@
 *.project
 webapp/includes/latest-tweets-*
 webapp/includes/latest-blog-entries-*
+webapp/includes/audio.json
 webapp/media/
