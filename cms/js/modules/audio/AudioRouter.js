@@ -5,7 +5,7 @@ define(function(require) {
     var Audio = require("modules/audio/Audio");
     var AudioCollection = require("modules/audio/AudioCollection");
     var AudioView = require("modules/audio/AudioView");
-    var AudioListView = require("modules/audio/AudioListView"); 
+    var AudiosView = require("modules/audio/AudiosView"); 
     
     var AudioRouter = RouterFactory.create({
         activeMenu: "audio",
@@ -20,7 +20,7 @@ define(function(require) {
             var audios = new AudioCollection();
             
             return audios.fetch().pipe(function() {
-                return new AudioListView({ model: audios });
+                return new AudiosView({ model: audios });
             });
         },
         

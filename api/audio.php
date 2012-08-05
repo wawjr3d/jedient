@@ -38,16 +38,41 @@
             break;  
             
         case "POST":  
-			$audio = new Audio();  
-			
-			populateFromRequest($audio, $data); 
+        
+        	if (isset($requestVars["action"])) {
+        		$action = $requestVars["action"];
+        		
+        		if ($action == "generatePlaylist") {
+        			$audios = $audioDAO->getAllActive();
+        			$playlistAudios = array();
+        			
+        			foreach ($audios as $audio) {
+        				$playlistAudio = new PlaylistAudio($audio->getFile(), $audio->getTitle(), $audio->getAuthor());
+        				
+        				array_push($playlistAudios, $playlistAudio);
+        			}
+        			
+        			$jsonUtils = new JSONUtils();
+        			$playlistAudiosJSON = $jsonUtils->serializeArray($playlistAudios);
+        			
+        			if (file_put_contents(WEBAPP_DIR . "/includes/audio.json", $playlistAudiosJSON)) {
+        				RestUtils::sendResponse(200, $playlistAudiosJSON, "application/json");
+        			} else {
+        				RestUtils::sendResponse(500, new Exception("There was a problem generating the playlist"));
+        			}
+        		}
+        	} else {
+				$audio = new Audio();  
+				
+				populateFromRequest($audio, $data); 
+	
+				if ($audioDAO->save($audio)) {
+					RestUtils::sendJSONResponse(200, $audio);
+				} else {
+					RestUtils::sendJSONResponse(500, new Exception("There was a problem creating the audio"));
+				}
+        	}
 
-			if ($audioDAO->save($audio)) {
-				RestUtils::sendJSONResponse(200, $audio);
-			} else {
-				RestUtils::sendJSONResponse(500, new Exception("There was a problem creating the audio"));
-			}
-			
             break;
               
         case "PUT":
