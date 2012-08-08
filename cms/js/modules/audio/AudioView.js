@@ -41,6 +41,7 @@ define(function(require) {
             var $form = $(e.currentTarget);
             var formArray = $form.serializeArray();
             var formObject = {};
+            var view = this;
             
             for(var i = 0; i < formArray.length; i++) {
                 var field = formArray[i];
@@ -52,13 +53,15 @@ define(function(require) {
                 formObject["isActive"] = false;
             }
             
+            this.disableSubmit();
             this.model.save(formObject, {
-                success: (function(view) {
-                    return function(model) {
-                        view.inEditMode = false;
-                        view.render();
-                    };
-                })(this)
+                success: function(model) {
+                    view.inEditMode = false;
+                    view.render();
+                },
+                error: function() {
+                    view.enableSubmit();
+                }
             });
         },
         
