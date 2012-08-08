@@ -33,8 +33,9 @@
             <div class="clear"></div>
             <h3>Simon "Juice" Lewis (artist)</h3>
 			<p><img src="images/juice_hands.jpg" alt="" height="125" class="alignleft bdr1 heffect" /> Simon "Juice" Lewis was born in Pittsburgh, PA where he grew up listening to MC's such as: The Roots, Common, Mos Def, Jay Z, and BIG but he was influenced mostly by Sean "P. Diddy" Combs as a entrepreneur in the entertainment industry. Simon has worked in the entertainment industry for over six years now. He started working with party promoters throwing raves. Then he started promoting with the recording label KingPinz Music Group. Then Simon began working with Square1, a recording label where he was a manager and promoter. Once Simon realized he can turn his dream into a reality he struck a partnership with Jonathan "Klark Kentt" Hughes to create the most formidable force in music today, JEDI ENTERTAINMENT.</p>
-			<h3>Charlie Vangogh (producer)</h3>
-			<p>Charlie belives that artistic talent is a divine gift. For the last 9 years he has been sharing this gift with a style of bass driven hip hop that has a heavy electronic influence.</p>
+			<h3>Charlie Vango (producer)</h3>
+			<p><img src="images/vango.jpg" alt="" height="125" class="alignleft bdr1 heffect" /> Charlie belives that artistic talent is a divine gift. For the last 9 years he has been sharing this gift with a style of bass driven hip hop that has a heavy electronic influence.</p>
+			<div class="clear"></div>
 			<h3>Shout Out</h3>
 			<p>It's ya Boy Klark Kentt A.K.A Two Kays! I'd liked to give my shout outs to the whole east side of Pittsburgh, all the way from Braddock to East Liberty. Shout out to the West End, North Side and the South Side. Shout out to all the artist doing it the same.</p>
 			<p>Shout out personally to those who help J.E.D.I and myself in our current journey:<br />On A Key Records, Phocused Recordsin Philadelphia, U.P.S Musik Group, Y.M DA Kid, King Pinz Records, Jenesis Magazine, Rock Around The World Productions, 700, Owey, BTP, Button Pusha,Mista Scrap and Statement Records. , Square One Records, It Is What It Is Ent.,Blackberry Studios, Tefnology, Heru, Poppy, H.A.W.G, Charlie Vangogh, D. Lane, DMB (out of Detroit) and so many more.</p>
