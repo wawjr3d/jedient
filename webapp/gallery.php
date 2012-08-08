@@ -2,13 +2,10 @@
 	require_once "../config/config.php";
 	
 	$photoDAO = new PhotoDAO();
-	$photos = $photoDAO->getActiveByActiveEvents();
+	$photos = $photoDAO->getAllActive();
 	
-	$eventIds = array();
-	
-	foreach($photos as $photo) {
-		$eventIds["" . $photo->getEventId()] = 1;
-	}
+	$eventDAO = new EventDAO();
+	$events = $eventDAO->getAllActive();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,10 +45,10 @@
             <ul>
               <li class="segment-0 selected-0"><a href="#" data-value="all">All</a></li>
               <?php
-              	$i = 1;
-              	foreach($eventIds as $eventId => $count) {
-              		echo "<li class='segment-$i'><a href='#' data-value='event-$eventId'>Event $eventId</a></li>";
-              		$i++;
+              	foreach($events as $event) {
+              		$eventId = $event->getId();
+              		$venue = $event->getVenue();
+              		echo "<li class='segment-$eventId'><a href='javascript:{}' data-value='event-$eventId'>$venue</a></li>";
               	}
               ?>
             </ul>
