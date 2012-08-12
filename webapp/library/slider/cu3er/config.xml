@@ -39,13 +39,13 @@
 -->
 
 <slide>
-<url>images/kentt_juice2.jpg</url>
+<url>images/jedi_sticker.jpg</url>
 <link target="_self">#</link> 
 </slide>
 <transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>
 
 <slide>
-<url>images/jedi_cloudy2.jpg</url>
+<url>images/kentt_juice2.jpg</url>
 <link target="_self">#</link>        
 </slide>
 <transition direction="left" slicing="horizontal" num="7" shader="none" z_multiplier="2"/>

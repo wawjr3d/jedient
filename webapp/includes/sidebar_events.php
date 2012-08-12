@@ -2,7 +2,7 @@
           
             <div class="widget">
               <h2 class="title"><span>Gallery</span></h2>
-              <div class="recentpost">
+              <!--<div class="recentpost">
                 <ul class="galleryside">
                 <li><a href="#"><img src="images/flickr-img-01.jpg" alt="" /></a></li>
                 <li><a href="#"><img src="images/flickr-img-02.jpg" alt="" /></a></li>
@@ -14,7 +14,23 @@
                 <li><a href="#"><img src="images/flickr-img-02.jpg" alt="" /></a></li>
                 <li><a href="#"><img src="images/flickr-img-05.jpg" alt="" /></a></li>
               </ul>              
-              </div>
+              </div>-->
+			  
+			<div class="ptpgallery" id="maingallery">
+			  <!--read the documentation to understand what's going on here -->
+			  <ul id="list" class="liststgrid">
+				<?php
+					foreach($photos as $photo) {
+						$id = $photo->getId();
+						$title = $photo->getTitle();
+						$image = $photo->getImage();
+						$thumbnail = $photo->getThumbnail();
+						$eventId = $photo->getEventId();
+						echo "<li data-id='id-$id' class='event-$eventId'><a href='$image' rel='prettyPhoto[gallery1]''><img src='$thumbnail' alt='$title' /></a> </li>"; 
+					}
+				?>
+			  </ul>
+			</div>			  
               </div>          
 		  
 		  <!--<div class="widget">
