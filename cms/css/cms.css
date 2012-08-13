@@ -10,9 +10,13 @@ body {
     font-size: 1em;    
 }
 
+a.inactive,
+.inactive {
+    color: #CCC;	
+}
+
 .inactive:after {
-    content: " (inactive) ";
-    color: #CCC;    
+    content: " (inactive) ";  
 }
 
 .thumbnail.not-image {
@@ -68,4 +72,13 @@ body {
 .generation-status {
 	color: #BADA55;
     margin: 0 1em;
+}
+
+.list {
+    -moz-column-count: 5;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 1em;
+    column-count: 5;
+    column-gap: 1em;	
 }
