@@ -1,8 +1,5 @@
 <?php
 	require_once "../config/config.php";
-
-	$photoDAO = new PhotoDAO();
-	$photos = $photoDAO->getAllActive();
 	
 	$eventDAO = new EventDAO();
 	$events = $eventDAO->getAllActive();
