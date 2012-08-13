@@ -5,7 +5,7 @@
 	$photos = $photoDAO->getAllActive();
 	
 	$eventDAO = new EventDAO();
-	$events = $eventDAO->getAllActive();
+	$events = $eventDAO->getAll();
 ?>
 <!DOCTYPE HTML>
 <html>
