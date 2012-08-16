@@ -142,7 +142,7 @@ if(isset($_SESSION['sent']))
             </div>
           </div>
           
-          <?php include_once "includes/sidebar_contact.php"; ?>
+          
         </div>
         <div class="clear"></div>
         <div class="clear"></div>

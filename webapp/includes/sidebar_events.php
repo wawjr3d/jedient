@@ -1,7 +1,7 @@
           <div class="sidebar">
           
             <div class="widget">
-              <h2 class="title"><span>Gallery</span></h2>
+              <h2 class="title"><span><a href="./gallery.php">Gallery</a></span></h2>
               <!--<div class="recentpost">
                 <ul class="galleryside">
                 <li><a href="#"><img src="images/flickr-img-01.jpg" alt="" /></a></li>
