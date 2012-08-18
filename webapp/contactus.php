@@ -72,17 +72,17 @@ if(isset($_SESSION['sent']))
                     </tr>
                     <tr>
                       <td width="15%" class="formspacer"><label for="name">Name</label></td>
-                      <td width="47%" class="formspacer"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" value="<?=$_SESSION['post']['name']?>" /></td>
+                      <td width="47%" class="formspacer"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" placeholder="e.g. John Smith" value="<?=isset($_SESSION['post']) ? $_SESSION['post']['name'] : ''?>" /></td>
                       <td width="38%" class="formspacer" id="errOffset">&nbsp;</td>
                     </tr>
                     <tr>
                       <td class="formspacer"><label for="email">Email</label></td>
-                      <td class="formspacer"><input type="text" class="validate[required,custom[email]]" name="email" id="email" value="<?=$_SESSION['post']['email']?>" /></td>
+                      <td class="formspacer"><input type="text" class="validate[required,custom[email]]" name="email" id="email" placeholder="e.g. your@email.com" value="<?=isset($_SESSION['post']) ? $_SESSION['post']['email'] : ''?>" /></td>
                       <td class="formspacer">&nbsp;</td>
                     </tr>
                     <tr>
                       <td class="formspacer"><label for="telephone">Phone</label></td>
-                      <td class="formspacer"><input type="text" class="validate[required,custom[telephone]]" name="telephone" id="telephone" value="<?=$_SESSION['post']['telephone']?>" /></td>
+                      <td class="formspacer"><input type="text" class="validate[required,custom[telephone]]" name="telephone" id="telephone" placeholder="e.g. 123-456-7890" value="<?=isset($_SESSION['post']) ? $_SESSION['post']['telephone'] : ''?>" /></td>
                       <td class="formspacer">&nbsp;</td>
                     </tr>
                     <tr>
@@ -98,9 +98,11 @@ if(isset($_SESSION['sent']))
                     </tr>
                     <tr>
                       <td valign="top" class="formspacer"><label for="message">Message</label></td>
-                      <td class="formspacer"><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"><?=$_SESSION['post']['message']?>
-</textarea></td>
+                      <td class="formspacer"><textarea name="message" id="message" class="validate[required]" cols="35" rows="5"><?=isset($_SESSION['post']) ? $_SESSION['post']['message'] : ''?></textarea></td>
                       <td valign="top" class="formspacer">&nbsp;</td>
+                    </tr>
+                    <tr>
+                    	<td colspan="2"><strong>Prove that you're a real person. Please answer this question:</strong></td>
                     </tr>
                     <tr>
                       <td class="formspacer"><label for="captcha">

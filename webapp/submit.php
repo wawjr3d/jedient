@@ -2,7 +2,7 @@
 
 /* config start */
 
-$emailAddress = 'anoopkamboj@gmail.com';
+$emailAddress = 'contact@jedient.com';
 
 /* config end */
 
