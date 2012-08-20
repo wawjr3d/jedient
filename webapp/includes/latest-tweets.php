@@ -25,23 +25,7 @@
 	foreach($tweets as $tweet) {
 		if ($i >= $tweet_count) { break; }
 		
-		$matched = false;
-			
-		$hashtags = $tweet->entities->hashtags;
-		foreach($hashtags as $found_hashtag) {
-			if (strtolower($found_hashtag->text) == strtolower($searchTerm)) {
-				$matched = true;
-			}
-		}
-		
-		$mentions = $tweet->entities->user_mentions;
-		foreach($mentions as $mention) {
-			if (strtolower($mention->screen_name) == strtolower($searchTerm)) {
-				$matched = true;
-			}
-		}
-		
-		if ($matched) {
+		if (strtolower($tweet->from_user) == strtolower($searchTerm)) {
 			array_push($filteredTweets, $tweet);
 			$i++;			
 		}
@@ -56,7 +40,7 @@
 			$tweet_created_at = $tweet->created_at;
 			$tweet_text = $tweet->text;
 			  	
-			$tweet_link = "http://www.twitter.com";
+			$tweet_link = "http://www.twitter.com/jedipgh";
 			
 			echo "<a href='$tweet_link' target='_blank'>$tweet_text</a>";
 		} else {
@@ -66,7 +50,7 @@
 			  	$tweet_created_at = $tweet->created_at;
 			  	$tweet_text = $tweet->text;
 			  	
-			  	$tweet_link = "http://www.twitter.com";
+			  	$tweet_link = "http://www.twitter.com/jedipgh";
 			
 			  	echo "<li><a href='$tweet_link' target='_blank'>$tweet_text</a></li>";
 		  	}
