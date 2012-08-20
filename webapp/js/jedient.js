@@ -4,7 +4,11 @@
     function setupMusicPlayer(audioPlayList) {
         $f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
             
-            playlist: audioPlayList,
+            clip : {
+				autoPlay: true
+			},
+			
+			playlist: audioPlayList,
          
             // show playlist buttons in controlbar
             plugins:  {

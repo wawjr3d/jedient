@@ -60,16 +60,14 @@ if(isset($_SESSION['sent']))
     <!-- Content Area - Start Here -->
     <div class="content">
       <div class="midarea">
-        <h2 class="intitle"> <span class="title">Contact Us</span> <span class="title_text">We appreciate all your feedback and comments.. If you wish to reach us for booking, promotion, advertising, or questions pleaes respond below.</span> </h2>
+        <h2 class="intitle"> <span class="title">Contact Us</span> <span class="title_text">We appreciate all your feedback and comments. If you wish to reach us for booking, promotion, advertising, or questions please respond below.</span> </h2>
         <div class="middle-inner" id="content">
           <div class="main_container">
             <div id="form">
               <div id="form-container">
                 <form id="contact-form" name="contact-form" method="post" action="submit.php">
                   <table width="100%" border="0" cellspacing="0" cellpadding="5" class="normal bdrnone left contact">
-                    <tr>
-                      <td colspan="3" class="formspacer"><h2 class="mzr_02"> Fill the FORM to provide information </h2></td>
-                    </tr>
+
                     <tr>
                       <td width="15%" class="formspacer"><label for="name">Name</label></td>
                       <td width="47%" class="formspacer"><input type="text" class="validate[required,custom[onlyLetter]]" name="name" id="name" placeholder="e.g. John Smith" value="<?=isset($_SESSION['post']) ? $_SESSION['post']['name'] : ''?>" /></td>

@@ -87,7 +87,7 @@
 					<div id="content">
 						<div class="one_fourth">
 							<h1 class="valignmiddle uppercase title-bold"><span class="dropLetter">J</span>Jealousy.</h1>
-							<span>In life you will experience Jealousy in at least two ways, your jealousy toward others or others jealousy toward you. If you have what they don't keep working because someone is coming for it. If what you want is what they have, keep working and maybe you can get.</span>
+							<span>In life you will experience Jealousy in at least two ways, your jealousy toward others or others jealousy toward you. If you have what they don't, keep working because someone is coming for it. If what you want is what they have, keep working and maybe you can get.</span>
 						</div>
 						<div class="one_fourth">
 							<h1 class="valignmiddle uppercase title-bold"><span class="dropLetter">E</span>Encouraged.</h1>
@@ -111,8 +111,8 @@
 		  <!-- Blockquote - Start here -->
 		  <div class="clearboth">
 			<blockquote class="home">
-	          <div class="quoteb">Seeing is believing, impossible is nothing, and the future is now.
-	            <div class="author">JEDI</div>
+	          <div class="quoteb">Seeing is believing, impossible is nothing, and the future is now."<span class="author">- JEDI</span>
+	            <div class="author"></div>
 	          </div>
 			</blockquote>
 		  </div>
