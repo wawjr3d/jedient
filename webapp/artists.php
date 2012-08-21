@@ -27,14 +27,27 @@
         <h2 class="intitle"> <span class="title">Artists / Producers</span> <span class="title_text">Jealousy Encourage Driven Intelligence</span> </h2>
         <div class="middle-inner" id="content">
           <div class="main_container">
+            <h3>Simon "Juice" Lewis (CEO and Co-Founder)</h3>
+			<p><img src="images/juice_hands.jpg" alt="" height="125" class="alignleft bdr1 heffect" /> Simon "Juice" Lewis was born in Pittsburgh, PA where he grew up listening to MC's such as: The Roots, Common, Mos Def, Jay Z, and BIG but he was influenced mostly by Sean "P. Diddy" Combs as a entrepreneur in the entertainment industry. Simon has worked in the entertainment industry for over six years now. He started working with party promoters throwing raves. Then he started promoting with the recording label KingPinz Music Group. Then Simon began working with Square1, a recording label where he was a manager and promoter. Once Simon realized he can turn his dream into a reality he struck a partnership with Jonathan "Klark Kentt" Hughes to create the most formidable force in music today, JEDI ENTERTAINMENT.</p>	
+			<ul>
+				<li><a target="_blank"  href="https://www.facebook.com/simon.juice">Simon Juice on Facebook</a></li>
+				<li><a target="_blank"  href="http://twitter.com/SamsoniteJuice">Simon Juice on Twitter</a></li>
+			</ul>			
             <div class="clear"></div>
-            <h3>Jonathan "Klark Kentt" Hughes (artist)</h3>
+            <h3>Jonathan "Klark Kentt" Hughes (Artist and Co-Founder)</h3>
 			<p><img src="images/jedi_stand.jpg" alt="" height="125" class="alignleft bdr1 heffect" /> Jonathan S. Hughes A.K.A  Klark Kentt is a born businessman from Pittsburgh, PA with a artistic background complete with writing poetry since age 7, performing for crowds since age 12 and writing music since age 16, he has added hip-hop mogul to his list of goals. With his influences in music coming from Jay-Z, Nas, Redman LL Cool J, Styles P and other founding fathers in music he has made himself a stand out artist in Pittsburgh and on the music labels On a Key Records, U.P.S and Square 1. He also has performed at Villanova University, in Allentown, PA, Faded Fest in Pittsburgh, Proud to Be Local and University of Pittsburgh just to name a few. With his hard earned degree from Villanova Univeristy in marketing and his experience in the entertainment industry Jonathan has begun a journey to start J.E.D.I Entertainment with the hopes of making it Pittsburgh's heaviest hitting record label. As part of a formidable business network and the guidance of very successful mentors he vows to be the driving force of change in music and business in the21st century. Seeing is believing, impossible is nothing and the future is now. You are witnessing the writing of history, 2012 is not the end its just the beginning, of 2Ks.</p>
+			<ul>
+                  <li><a target="_blank" href="https://www.facebook.com/KentdakiD">Klark Kentt on Facebook</a></li>
+				  <li><a target="_blank" href="http://twitter.com/jedipgh">Klark Kentt on Twitter</a></li>
+			</ul>
             <div class="clear"></div>
-            <h3>Simon "Juice" Lewis (artist)</h3>
-			<p><img src="images/juice_hands.jpg" alt="" height="125" class="alignleft bdr1 heffect" /> Simon "Juice" Lewis was born in Pittsburgh, PA where he grew up listening to MC's such as: The Roots, Common, Mos Def, Jay Z, and BIG but he was influenced mostly by Sean "P. Diddy" Combs as a entrepreneur in the entertainment industry. Simon has worked in the entertainment industry for over six years now. He started working with party promoters throwing raves. Then he started promoting with the recording label KingPinz Music Group. Then Simon began working with Square1, a recording label where he was a manager and promoter. Once Simon realized he can turn his dream into a reality he struck a partnership with Jonathan "Klark Kentt" Hughes to create the most formidable force in music today, JEDI ENTERTAINMENT.</p>
-			<h3>Charlie Vango (producer)</h3>
+			<h3>Charlie Davis (Producer)</h3>
 			<p><img src="images/vango.jpg" alt="" height="125" class="alignleft bdr1 heffect" /> Charlie belives that artistic talent is a divine gift. For the last 9 years he has been sharing this gift with a style of bass driven hip hop that has a heavy electronic influence.</p>
+			<div class="clear"></div>
+			<ul>
+				<li><a target="_blank"  href="http://www.facebook.com/crd3001">Charlie Davis on Facebook</a></li>
+				<li><a target="_blank"  href="http://twitter.com/JediEntCharlie">Charlie Davis on Twitter</a></li>
+			</ul>				
 			<div class="clear"></div>
 			<h3>Shout Out</h3>
 			<p>It's ya Boy Klark Kentt A.K.A Two Kays! I'd liked to give my shout outs to the whole east side of Pittsburgh, all the way from Braddock to East Liberty. Shout out to the West End, North Side and the South Side. Shout out to all the artist doing it the same.</p>

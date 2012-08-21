@@ -66,7 +66,7 @@
 			  	$tweet_created_at = $tweet->created_at;
 			  	$tweet_text = $tweet->text;
 			  	
-			  	$tweet_link = "http://www.twitter.com";
+			  	$tweet_link = "http://www.twitter.com/jedipgh";
 			
 			  	echo "<li><a href='$tweet_link' target='_blank'>$tweet_text</a></li>";
 		  	}
