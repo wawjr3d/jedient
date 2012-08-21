@@ -73,7 +73,11 @@
 		  <!-- Home Slogan Box - Start here -->
 		  <div id="home-slogan-box">
 
+<<<<<<< HEAD
 		  	<a href="http://www.twitter.com/jedipgh" class="twitter" target="_blank">Latest @jedipgh from twitter:</a>
+=======
+		  	<a href="http://www.twitter.com/jedipgh" class="twitter">Latest @jedipgh from twitter:</a>
+>>>>>>> 090069007203f131939d21e7cd092359012569e7
 
 			<div class="home-slogan-box-inner txtalctr">
 			  <h2><?php include "includes/latest-tweets-1.html"; ?></h2>

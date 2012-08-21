@@ -3,10 +3,13 @@
     
     function setupMusicPlayer(audioPlayList) {
         $f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
+<<<<<<< HEAD
             
             clip: {
 				autoPlay: false
 			},
+=======
+>>>>>>> 090069007203f131939d21e7cd092359012569e7
 			
 			playlist: audioPlayList,
          

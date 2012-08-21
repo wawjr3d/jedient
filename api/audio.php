@@ -43,11 +43,14 @@
         		$action = $requestVars["action"];
         		
         		if ($action == "generatePlaylist") {
+        			$autoPlay = false;
+        			
         			$audios = $audioDAO->getAllActive();
         			$playlistAudios = array();
         			
         			foreach ($audios as $audio) {
-        				$playlistAudio = new PlaylistAudio($audio->getFile(), $audio->getTitle(), $audio->getAuthor());
+        				$playlistAudio = new PlaylistAudio($audio->getFile(), $audio->getTitle(), $audio->getAuthor(), $autoPlay);
+        				$autoPlay = true;
         				
         				array_push($playlistAudios, $playlistAudio);
         			}
