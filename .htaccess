@@ -1,0 +1,7 @@
+Options FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} !^[A-Z]+\ /webapp/
+RewriteCond %{THE_REQUEST} !^[A-Z]+\ /cms/
+RewriteCond %{THE_REQUEST} !^[A-Z]+\ /api/
+RewriteRule  ^(.*)$ webapp/$1 [R=301,L]
