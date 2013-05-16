@@ -1,11 +1,36 @@
 (function(global) {
     "use strict";
     
-    function setupMusicPlayer(audioPlayList) {
+    function setupMusicPlayer(playlist) {
+
+        var current = 0;
+
+        function playPrevious() {
+            var previous = current - 1;
+
+            if (previous < 0) { previous = playlist.length - 1; }
+
+            $f().play(playlist[previous]);
+            
+            current = previous;   
+        }
+
+        function playNext() {
+            var next = current + 1;
+
+            if (next >= playlist.length) { next = 0; }
+
+            $f().play(playlist[next]);
+
+            current = next;
+        }
+
+        function updatePlayer(clip) {
+            $(".controls em").html("\"" + clip.details.title + "\" by " + clip.details.author);
+        }
+
         $f("music-player", "thirdparty/flowplayer/flowplayer-3.2.9.swf", {
-			
-			playlist: audioPlayList,
-         
+
             // show playlist buttons in controlbar
             plugins:  {
                 audio: {
@@ -14,18 +39,17 @@
                 controls: null
             },
             
-            onStart: function(playingClip) {
-                var currentPlayingDisplay = ["\"" + playingClip.details.title + "\"",
-                                             "by",
-                                             playingClip.details.author].join(" ");
-                
-                $(".controls em").html(currentPlayingDisplay);
+            clip: {
+                onBegin: updatePlayer,
+
+                onFinish: playNext
             }
+
         })
         .controls("music-player-controls")
         .controls("top-music-player-controls");
-        
-        
+
+
         // setup scrolling audio title effect
         $(".controls .track")
             .mouseover(function() {
@@ -42,6 +66,33 @@
                 $currentClip.stop().css({ left: 0 });
             })
             .prepend("<em/>");
+
+        var $previous = $();
+        var $next = $();
+
+        $(".controls")
+            .append("<span class='next' />")
+            .append("<span class='prev' />");
+
+        if (playlist.length > 1) {
+            $(".controls .prev").click(playPrevious);
+            $(".controls .next").click(playNext);
+        } else {
+            $(".music-player").addClass("only-one");
+        }
+
+        $f().load(function() {
+            var clip = playlist[current];
+
+            // set to autoplay false so playlist doesnt autoplay
+            clip.autoPlay = false;
+
+            $f().setClip(clip);
+            updatePlayer(clip);
+
+            // set back to autoplay true so that it will autoplay as the music loops
+            clip.autoPlay = true;
+        });
     }
     
     $.ajax({

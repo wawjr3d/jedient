@@ -11,19 +11,42 @@
 
     /* black background with a gradient */
     background:#000 url(../images/hulu.png) repeat-x 0 -4px;
-    width:415px;
+    width: 486px;
 }
+
+.music-player .controls .prev,
+.music-player .controls .next {
+    position: absolute;
+    overflow: hidden;
+    background: url(../images/prev_next.png) no-repeat;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.music-player .controls .prev {
+    background-position: 8px -54px;
+    left: 0;
+}
+
+.music-player .controls .next {
+    background-position: 8px 12px;
+    left: 77px;
+}
+
 
 /* play/pause button */
 .music-player .controls .play, .music-player .controls .pause {
     position:absolute;
+    left: 32px;
     width: 46px;
     height: 40px;
     display:block;
     text-indent:-9999em;
     background:url(../images/hulu.png) no-repeat 10px -61px;
     cursor:pointer;
-    border-right:1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
 .music-player .controls .play:hover {
@@ -41,7 +64,7 @@
 
 /* the timeline (or "scrubber")  */
 .music-player .controls .track {
-    left:47px;
+    left: 108px;
     overflow: hidden;
     position:absolute;
     cursor:pointer;
@@ -90,7 +113,7 @@
 .music-player .controls .time {
     position:absolute;
     width:129px;
-    left: 247px;
+    left: 308px;
     padding:12px 0;
     text-align:center;
     border:1px solid #999;
@@ -106,9 +129,10 @@
 }
 
 /* mute / unmute buttons */
-.music-player .controls .mute, .music-player .controls .unmute {
+.music-player .controls .mute,
+.music-player .controls .unmute {
     position:absolute;
-    left:375px;
+    left: 436px;
     width:40px;
     height:40px;
     text-align:center;
@@ -129,4 +153,34 @@
 
 .music-player .controls .unmute:hover {
     background-position:5px -279px;
+}
+
+
+/* when theres only one audio */
+.only-one .controls {
+    width: 415px;
+}
+
+.only-one .controls .next, 
+.only-one .controls .prev {
+    display: none;
+}
+
+.only-one .controls .play,
+.only-one .controls .pause {
+    left: 0;
+    border-left: 0 none;
+}
+
+.only-one .controls .track {
+    left: 47px;
+}
+
+.only-one .controls .time {
+    left: 247px;
+}
+
+.only-one .controls .mute,
+.only-one .controls .unmute {
+    left: 375px;
 }
