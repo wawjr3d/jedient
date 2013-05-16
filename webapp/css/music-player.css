@@ -11,11 +11,12 @@
 
     /* black background with a gradient */
     background:#000 url(../images/hulu.png) repeat-x 0 -4px;
-    width: 486px;
+    width: 415px;
 }
 
 .music-player .controls .prev,
 .music-player .controls .next {
+    display: none;
     position: absolute;
     overflow: hidden;
     background: url(../images/prev_next.png) no-repeat;
@@ -36,9 +37,10 @@
 
 
 /* play/pause button */
-.music-player .controls .play, .music-player .controls .pause {
+.music-player .controls .play,
+.music-player .controls .pause {
     position:absolute;
-    left: 32px;
+    left: 0;
     width: 46px;
     height: 40px;
     display:block;
@@ -64,7 +66,7 @@
 
 /* the timeline (or "scrubber")  */
 .music-player .controls .track {
-    left: 108px;
+    left: 47px;
     overflow: hidden;
     position:absolute;
     cursor:pointer;
@@ -94,7 +96,8 @@
 }
 
 /* buffer- and progress bars. upon runtime the width of these elements grows */
-.music-player .controls .progress, .music-player .controls .buffer {
+.music-player .controls .progress,
+.music-player .controls .buffer {
     position:absolute;
     background-color:#FFC500;
     filter: alpha(opacity=10);
@@ -113,7 +116,7 @@
 .music-player .controls .time {
     position:absolute;
     width:129px;
-    left: 308px;
+    left: 247px;
     padding:12px 0;
     text-align:center;
     border:1px solid #999;
@@ -132,7 +135,7 @@
 .music-player .controls .mute,
 .music-player .controls .unmute {
     position:absolute;
-    left: 436px;
+    left: 375px;
     width:40px;
     height:40px;
     text-align:center;
@@ -156,31 +159,31 @@
 }
 
 
-/* when theres only one audio */
-.only-one .controls {
-    width: 415px;
+/* when theres many audio files */
+.has-many .controls {
+    width: 486px;
 }
 
-.only-one .controls .next, 
-.only-one .controls .prev {
-    display: none;
+.has-many .controls .next, 
+.has-many .controls .prev {
+    display: block;
 }
 
-.only-one .controls .play,
-.only-one .controls .pause {
-    left: 0;
+.has-many .controls .play,
+.has-many .controls .pause {
+    left: 32px;
     border-left: 0 none;
 }
 
-.only-one .controls .track {
-    left: 47px;
+.has-many .controls .track {
+    left: 108px;
 }
 
-.only-one .controls .time {
-    left: 247px;
+.has-many .controls .time {
+    left: 308px;
 }
 
-.only-one .controls .mute,
-.only-one .controls .unmute {
-    left: 375px;
+.has-many .controls .mute,
+.has-many .controls .unmute {
+    left: 436px;
 }

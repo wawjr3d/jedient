@@ -77,8 +77,8 @@
         if (playlist.length > 1) {
             $(".controls .prev").click(playPrevious);
             $(".controls .next").click(playNext);
-        } else {
-            $(".music-player").addClass("only-one");
+
+            $(".music-player").addClass("has-many");
         }
 
         $f().load(function() {
